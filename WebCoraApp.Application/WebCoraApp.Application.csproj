@@ -5,14 +5,15 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Configurations\" />
-    <Folder Include="Extensions\" />
-    <Folder Include="Repositories\" />
+    <Folder Include="Interfaces\" />
+    <Folder Include="Implementation\" />
+    <Folder Include="AutoMapper\" />
+    <Folder Include="ViewModels\" />
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\WebCoreApp.Data.EF\WebCoreApp.Data.EF.csproj" />
     <ProjectReference Include="..\WebCoreApp.Data\WebCoreApp.Data.csproj" />
-    <ProjectReference Include="..\WebCoreApp.Infrastructure\WebCoreApp.Infrastructure.csproj" />
     <ProjectReference Include="..\WebCoreApp.Utilities\WebCoreApp.Utilities.csproj" />
   </ItemGroup>
 
