@@ -18,6 +18,8 @@ using WebCoraApp.Application.Interfaces;
 using WebCoreApp.Data.IRepositories;
 using WebCoreApp.Data.EF.Repositories;
 using WebCoraApp.Application.Implementation;
+using Microsoft.Extensions.Logging;
+using Newtonsoft.Json.Serialization;
 
 namespace WebCoreApp
 {
@@ -35,12 +37,13 @@ namespace WebCoreApp
         {
             services.AddDbContext<AppDbContext>(options =>
                 options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection"),
-                o=>o.MigrationsAssembly("WebCoreApp.Data.EF")));
+                o => o.MigrationsAssembly("TeduCoreApp.Data.EF")));
 
             services.AddIdentity<AppUser, AppRole>()
                 .AddEntityFrameworkStores<AppDbContext>()
                 .AddDefaultTokenProviders();
 
+            // Configure Identity
             services.Configure<IdentityOptions>(options =>
             {
                 // Password settings
@@ -67,22 +70,24 @@ namespace WebCoreApp
             services.AddScoped<IMapper>(sp => new Mapper(sp.GetRequiredService<AutoMapper.IConfigurationProvider>(), sp.GetService));
 
             services.AddTransient<IEmailSender, EmailSender>();
+
             services.AddTransient<DbInitializer>();
 
-            services.AddTransient<IProductCategoryRepository,ProductCategoryRepository>();
+            services.AddTransient<IProductCategoryRepository, ProductCategoryRepository>();
 
-            services.AddTransient<IProductCategoryService,ProductCategoryService>();
+            services.AddTransient<IProductCategoryService, ProductCategoryService>();
 
-            services.AddMvc();
+            services.AddMvc().AddJsonOptions(options => options.SerializerSettings.ContractResolver = new DefaultContractResolver());
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IHostingEnvironment env)
+        public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory)
         {
+            loggerFactory.AddFile("Logs/tedu-{Date}.txt");
             if (env.IsDevelopment())
             {
-                app.UseBrowserLink();
                 app.UseDeveloperExceptionPage();
+                app.UseBrowserLink();
                 app.UseDatabaseErrorPage();
             }
             else
@@ -103,8 +108,7 @@ namespace WebCoreApp
                 routes.MapRoute(name: "areaRoute",
                     template: "{area:exists}/{controller=Home}/{action=Index}/{id?}");
             });
-            
-            
+
         }
     }
 }
