@@ -1559,3 +1559,2163 @@ WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
 2019-02-27T14:29:50.0355526+07:00 0HLKSGK6Q8T3R:00000003 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Home/Index.cshtml". (9707eebe)
 2019-02-27T14:29:50.0520345+07:00 0HLKSGK6Q8T3R:00000003 [INF] Executed action "WebCoreApp.Areas.Admin.Controllers.HomeController.Index (WebCoreApp)" in 37.8224ms (afa2e885)
 2019-02-27T14:29:50.0816808+07:00 0HLKSGK6Q8T3R:00000003 [INF] Request finished in 138.8358ms 200 text/html; charset=utf-8 (791a596a)
+2019-02-27T18:26:35.0370328+07:00  [INF] Entity Framework Core "2.0.3-rtm-10026" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=WebCoreApp.Data.EF " (9958f5bb)
+2019-02-27T18:26:53.2456921+07:00  [INF] Executed DbCommand ("360"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppRoles] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2019-02-27T18:26:53.7253500+07:00  [INF] Executed DbCommand ("94"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppUsers] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2019-02-27T18:26:54.1967471+07:00  [INF] Executed DbCommand ("407"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Functions] AS [f]" (0723d8ff)
+2019-02-27T18:26:54.7863312+07:00  [INF] Executed DbCommand ("425"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Footers] AS [x]
+WHERE [x].[Id] = 'DefaultFooterId'" (0723d8ff)
+2019-02-27T18:26:54.8256653+07:00  [INF] Executed DbCommand ("32"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Colors] AS [c]" (0723d8ff)
+2019-02-27T18:26:55.1353195+07:00  [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [AdvertistmentPages] AS [a]" (0723d8ff)
+2019-02-27T18:26:55.2038206+07:00  [INF] Executed DbCommand ("44"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Slides] AS [s]" (0723d8ff)
+2019-02-27T18:26:55.2510068+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Sizes] AS [s]" (0723d8ff)
+2019-02-27T18:26:55.2982225+07:00  [INF] Executed DbCommand ("34"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [ProductCategories] AS [p]" (0723d8ff)
+2019-02-27T18:26:55.6869099+07:00  [INF] Executed DbCommand ("33"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeTitle')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2019-02-27T18:26:55.8106213+07:00  [INF] Executed DbCommand ("109"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaKeyword')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2019-02-27T18:26:55.8165206+07:00  [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaDescription')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2019-02-27T18:27:13.1560389+07:00 0HLKSKPTNEQ19:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:49945/   (ca22a1cb)
+2019-02-27T18:27:23.8703948+07:00 0HLKSKPTNEQ19:00000001 [INF] Authorization failed for user: null. (a4ab1676)
+2019-02-27T18:27:23.8820816+07:00 0HLKSKPTNEQ19:00000001 [INF] Authorization failed for the request at filter '"Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter"'. (8b6446cb)
+2019-02-27T18:27:23.9202400+07:00 0HLKSKPTNEQ19:00000001 [INF] Executing ChallengeResult with authentication schemes ([]). (f3dca807)
+2019-02-27T18:27:24.0231728+07:00 0HLKSKPTNEQ19:00000001 [INF] AuthenticationScheme: "Identity.Application" was challenged. (d45f1f38)
+2019-02-27T18:27:24.0650574+07:00 0HLKSKPTNEQ19:00000001 [INF] Executed action "WebCoreApp.Controllers.HomeController.Index (WebCoreApp)" in 196.1858ms (afa2e885)
+2019-02-27T18:27:24.0772731+07:00 0HLKSKPTNEQ19:00000001 [INF] Request finished in 11533.8025ms 302  (791a596a)
+2019-02-27T18:27:24.2142302+07:00 0HLKSKPTNEQ19:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:49945/Account/Login?ReturnUrl=%2F   (ca22a1cb)
+2019-02-27T18:27:24.6964936+07:00 0HLKSKPTNEQ19:00000002 [INF] Executing action method "WebCoreApp.Controllers.AccountController.Login (WebCoreApp)" with arguments (["/"]) - ModelState is Valid (ba7f4ac2)
+2019-02-27T18:27:24.9068770+07:00 0HLKSKPTNEQ19:00000002 [INF] AuthenticationScheme: "Identity.External" signed out. (d3f50c8d)
+2019-02-27T18:27:52.0874538+07:00 0HLKSKPTNEQ19:00000002 [INF] Executing ViewResult, running view at path "/Views/Account/Login.cshtml". (9707eebe)
+2019-02-27T18:29:16.0504590+07:00  [INF] Entity Framework Core "2.0.3-rtm-10026" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=WebCoreApp.Data.EF " (9958f5bb)
+2019-02-27T18:29:19.7236373+07:00  [INF] Executed DbCommand ("157"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppRoles] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2019-02-27T18:29:19.7806104+07:00  [INF] Executed DbCommand ("14"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppUsers] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2019-02-27T18:29:19.8723014+07:00  [INF] Executed DbCommand ("69"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Functions] AS [f]" (0723d8ff)
+2019-02-27T18:29:19.9451655+07:00  [INF] Executed DbCommand ("37"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Footers] AS [x]
+WHERE [x].[Id] = 'DefaultFooterId'" (0723d8ff)
+2019-02-27T18:29:19.9581848+07:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Colors] AS [c]" (0723d8ff)
+2019-02-27T18:29:20.0199299+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [AdvertistmentPages] AS [a]" (0723d8ff)
+2019-02-27T18:29:20.1180599+07:00  [INF] Executed DbCommand ("37"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Slides] AS [s]" (0723d8ff)
+2019-02-27T18:29:20.1434191+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Sizes] AS [s]" (0723d8ff)
+2019-02-27T18:29:20.1828008+07:00  [INF] Executed DbCommand ("12"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [ProductCategories] AS [p]" (0723d8ff)
+2019-02-27T18:29:20.2878916+07:00  [INF] Executed DbCommand ("14"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeTitle')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2019-02-27T18:29:20.3139476+07:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaKeyword')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2019-02-27T18:29:20.3307991+07:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaDescription')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2019-02-27T18:29:27.1174521+07:00 0HLKSKR8IF524:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:49945/   (ca22a1cb)
+2019-02-27T18:29:30.0988624+07:00 0HLKSKR8IF524:00000001 [INF] Authorization failed for user: null. (a4ab1676)
+2019-02-27T18:29:30.1200727+07:00 0HLKSKR8IF524:00000001 [INF] Authorization failed for the request at filter '"Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter"'. (8b6446cb)
+2019-02-27T18:29:30.1522430+07:00 0HLKSKR8IF524:00000001 [INF] Executing ChallengeResult with authentication schemes ([]). (f3dca807)
+2019-02-27T18:29:30.2005183+07:00 0HLKSKR8IF524:00000001 [INF] AuthenticationScheme: "Identity.Application" was challenged. (d45f1f38)
+2019-02-27T18:29:30.2173513+07:00 0HLKSKR8IF524:00000001 [INF] Executed action "WebCoreApp.Controllers.HomeController.Index (WebCoreApp)" in 118.2264ms (afa2e885)
+2019-02-27T18:29:30.2389109+07:00 0HLKSKR8IF524:00000001 [INF] Request finished in 7393.4751ms 302  (791a596a)
+2019-02-27T18:29:30.2793374+07:00 0HLKSKR8IF524:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:49945/Account/Login?ReturnUrl=%2F   (ca22a1cb)
+2019-02-27T18:29:30.4543050+07:00 0HLKSKR8IF524:00000002 [INF] Executing action method "WebCoreApp.Controllers.AccountController.Login (WebCoreApp)" with arguments (["/"]) - ModelState is Valid (ba7f4ac2)
+2019-02-27T18:29:30.4950570+07:00 0HLKSKR8IF524:00000002 [INF] AuthenticationScheme: "Identity.External" signed out. (d3f50c8d)
+2019-02-27T18:29:42.7906642+07:00 0HLKSKR8IF524:00000002 [INF] Executing ViewResult, running view at path "/Views/Account/Login.cshtml". (9707eebe)
+2019-02-27T18:29:44.9174706+07:00 0HLKSKR8IF524:00000002 [INF] Executed action "WebCoreApp.Controllers.AccountController.Login (WebCoreApp)" in 14535.3301ms (afa2e885)
+2019-02-27T18:29:44.9656878+07:00 0HLKSKR8IF524:00000002 [INF] Request finished in 14666.8414ms 200 text/html; charset=utf-8 (791a596a)
+2019-02-27T18:32:13.8907278+07:00  [INF] Entity Framework Core "2.0.3-rtm-10026" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=WebCoreApp.Data.EF " (9958f5bb)
+2019-02-27T18:32:15.7147691+07:00  [INF] Executed DbCommand ("74"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppRoles] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2019-02-27T18:32:15.7557346+07:00  [INF] Executed DbCommand ("13"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppUsers] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2019-02-27T18:32:15.8715563+07:00  [INF] Executed DbCommand ("91"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Functions] AS [f]" (0723d8ff)
+2019-02-27T18:32:15.9321208+07:00  [INF] Executed DbCommand ("11"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Footers] AS [x]
+WHERE [x].[Id] = 'DefaultFooterId'" (0723d8ff)
+2019-02-27T18:32:15.9625202+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Colors] AS [c]" (0723d8ff)
+2019-02-27T18:32:16.0522609+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [AdvertistmentPages] AS [a]" (0723d8ff)
+2019-02-27T18:32:16.1280330+07:00  [INF] Executed DbCommand ("27"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Slides] AS [s]" (0723d8ff)
+2019-02-27T18:32:16.1504662+07:00  [INF] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Sizes] AS [s]" (0723d8ff)
+2019-02-27T18:32:16.2083736+07:00  [INF] Executed DbCommand ("13"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [ProductCategories] AS [p]" (0723d8ff)
+2019-02-27T18:32:16.3159444+07:00  [INF] Executed DbCommand ("29"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeTitle')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2019-02-27T18:32:16.4303157+07:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaKeyword')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2019-02-27T18:32:16.4497252+07:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaDescription')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2019-02-27T18:32:18.3732105+07:00 0HLKSKST30KE4:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:49945/   (ca22a1cb)
+2019-02-27T18:32:18.8641965+07:00 0HLKSKST30KE4:00000001 [INF] Authorization failed for user: null. (a4ab1676)
+2019-02-27T18:32:18.9272479+07:00 0HLKSKST30KE4:00000001 [INF] Authorization failed for the request at filter '"Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter"'. (8b6446cb)
+2019-02-27T18:32:18.9642975+07:00 0HLKSKST30KE4:00000001 [INF] Executing ChallengeResult with authentication schemes ([]). (f3dca807)
+2019-02-27T18:32:18.9913061+07:00 0HLKSKST30KE4:00000001 [INF] AuthenticationScheme: "Identity.Application" was challenged. (d45f1f38)
+2019-02-27T18:32:19.0224958+07:00 0HLKSKST30KE4:00000001 [INF] Executed action "WebCoreApp.Controllers.HomeController.Index (WebCoreApp)" in 154.8369ms (afa2e885)
+2019-02-27T18:32:19.0579733+07:00 0HLKSKST30KE4:00000001 [INF] Request finished in 734.6299ms 302  (791a596a)
+2019-02-27T18:32:19.1210431+07:00 0HLKSKST30KE4:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:49945/Account/Login?ReturnUrl=%2F   (ca22a1cb)
+2019-02-27T18:32:19.2219099+07:00 0HLKSKST30KE4:00000002 [INF] Executing action method "WebCoreApp.Controllers.AccountController.Login (WebCoreApp)" with arguments (["/"]) - ModelState is Valid (ba7f4ac2)
+2019-02-27T18:32:19.2482475+07:00 0HLKSKST30KE4:00000002 [INF] AuthenticationScheme: "Identity.External" signed out. (d3f50c8d)
+2019-02-27T18:32:23.9567543+07:00 0HLKSKST30KE4:00000002 [INF] Executing ViewResult, running view at path "/Views/Account/Login.cshtml". (9707eebe)
+2019-02-27T18:32:24.9240878+07:00 0HLKSKST30KE6:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:49945/css/site.css   (ca22a1cb)
+2019-02-27T18:32:24.9325224+07:00 0HLKSKST30KE9:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:49945/lib/jquery/dist/jquery.js   (ca22a1cb)
+2019-02-27T18:32:25.0387874+07:00 0HLKSKST30KE8:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:49945/lib/bootstrap/dist/js/bootstrap.js   (ca22a1cb)
+2019-02-27T18:32:25.1193558+07:00 0HLKSKST30KE4:00000002 [INF] Executed action "WebCoreApp.Controllers.AccountController.Login (WebCoreApp)" in 5688.6402ms (afa2e885)
+2019-02-27T18:32:25.1534750+07:00 0HLKSKST30KE7:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:49945/lib/bootstrap/dist/css/bootstrap.css   (ca22a1cb)
+2019-02-27T18:32:25.1581374+07:00 0HLKSKST30KE8:00000001 [INF] The file "/lib/bootstrap/dist/js/bootstrap.js" was not modified (f1f8d725)
+2019-02-27T18:32:25.1630529+07:00 0HLKSKST30KE6:00000001 [INF] The file "/css/site.css" was not modified (f1f8d725)
+2019-02-27T18:32:25.2590796+07:00 0HLKSKST30KE6:00000001 [INF] Request finished in 291.4351ms 304 text/css (791a596a)
+2019-02-27T18:32:25.2694462+07:00 0HLKSKST30KE8:00000001 [INF] Request finished in 289.9421ms 304 application/javascript (791a596a)
+2019-02-27T18:32:25.2976041+07:00 0HLKSKST30KE4:00000002 [INF] Request finished in 6032.0648ms 200 text/html; charset=utf-8 (791a596a)
+2019-02-27T18:32:25.3348031+07:00 0HLKSKST30KE9:00000001 [INF] The file "/lib/jquery/dist/jquery.js" was not modified (f1f8d725)
+2019-02-27T18:32:25.3519191+07:00 0HLKSKST30KE7:00000001 [INF] The file "/lib/bootstrap/dist/css/bootstrap.css" was not modified (f1f8d725)
+2019-02-27T18:32:25.4174748+07:00 0HLKSKST30KEA:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:49945/js/site.js?v=ji3-IxbEzYWjzzLCGkF1KDjrT2jLbbrSYXw-AhMPNIA   (ca22a1cb)
+2019-02-27T18:32:25.4535197+07:00 0HLKSKST30KE9:00000001 [INF] Request finished in 462.131ms 304 application/javascript (791a596a)
+2019-02-27T18:32:25.4831261+07:00 0HLKSKST30KE4:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:49945/lib/jquery-validation/dist/jquery.validate.js   (ca22a1cb)
+2019-02-27T18:32:25.5453655+07:00 0HLKSKST30KE8:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:49945/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js   (ca22a1cb)
+2019-02-27T18:32:25.5501741+07:00 0HLKSKST30KE7:00000001 [INF] Request finished in 479.8613ms 304 text/css (791a596a)
+2019-02-27T18:32:25.5725632+07:00 0HLKSKST30KE8:00000002 [INF] The file "/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js" was not modified (f1f8d725)
+2019-02-27T18:32:25.5796762+07:00 0HLKSKST30KEA:00000001 [INF] The file "/js/site.js" was not modified (f1f8d725)
+2019-02-27T18:32:25.5912409+07:00 0HLKSKST30KE8:00000002 [INF] Request finished in 165.8826ms 304 application/javascript (791a596a)
+2019-02-27T18:32:25.5961244+07:00 0HLKSKST30KE4:00000003 [INF] The file "/lib/jquery-validation/dist/jquery.validate.js" was not modified (f1f8d725)
+2019-02-27T18:32:25.6485920+07:00 0HLKSKST30KE4:00000003 [INF] Request finished in 169.9733ms 304 application/javascript (791a596a)
+2019-02-27T18:32:25.6714631+07:00 0HLKSKST30KEA:00000001 [INF] Request finished in 210.5144ms 304 application/javascript (791a596a)
+2019-02-27T18:36:30.1179376+07:00  [INF] Entity Framework Core "2.0.3-rtm-10026" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=WebCoreApp.Data.EF " (9958f5bb)
+2019-02-27T18:36:35.5781917+07:00  [INF] Executed DbCommand ("172"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppRoles] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2019-02-27T18:36:35.6275538+07:00  [INF] Executed DbCommand ("5"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppUsers] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2019-02-27T18:36:35.9721685+07:00  [INF] Executed DbCommand ("309"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Functions] AS [f]" (0723d8ff)
+2019-02-27T18:36:36.0294568+07:00  [INF] Executed DbCommand ("39"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Footers] AS [x]
+WHERE [x].[Id] = 'DefaultFooterId'" (0723d8ff)
+2019-02-27T18:36:36.0642813+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Colors] AS [c]" (0723d8ff)
+2019-02-27T18:36:36.2524289+07:00  [INF] Executed DbCommand ("22"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [AdvertistmentPages] AS [a]" (0723d8ff)
+2019-02-27T18:36:36.3973922+07:00  [INF] Executed DbCommand ("40"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Slides] AS [s]" (0723d8ff)
+2019-02-27T18:36:36.4169695+07:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Sizes] AS [s]" (0723d8ff)
+2019-02-27T18:36:36.5016022+07:00  [INF] Executed DbCommand ("40"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [ProductCategories] AS [p]" (0723d8ff)
+2019-02-27T18:36:36.6055110+07:00  [INF] Executed DbCommand ("61"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeTitle')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2019-02-27T18:36:36.6174796+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaKeyword')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2019-02-27T18:36:36.6243454+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaDescription')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2019-02-27T18:36:48.8505922+07:00 0HLKSKVAK8G4Q:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:49945/   (ca22a1cb)
+2019-02-27T18:36:49.0255456+07:00 0HLKSKVAK8G4Q:00000001 [INF] Authorization failed for user: null. (a4ab1676)
+2019-02-27T18:36:49.0561774+07:00 0HLKSKVAK8G4Q:00000001 [INF] Authorization failed for the request at filter '"Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter"'. (8b6446cb)
+2019-02-27T18:36:49.0687090+07:00 0HLKSKVAK8G4Q:00000001 [INF] Executing ChallengeResult with authentication schemes ([]). (f3dca807)
+2019-02-27T18:36:49.1045734+07:00 0HLKSKVAK8G4Q:00000001 [INF] AuthenticationScheme: "Identity.Application" was challenged. (d45f1f38)
+2019-02-27T18:36:49.1158071+07:00 0HLKSKVAK8G4Q:00000001 [INF] Executed action "WebCoreApp.Controllers.HomeController.Index (WebCoreApp)" in 92.1871ms (afa2e885)
+2019-02-27T18:36:49.1533632+07:00 0HLKSKVAK8G4Q:00000001 [INF] Request finished in 298.7773ms 302  (791a596a)
+2019-02-27T18:36:49.3331179+07:00 0HLKSKVAK8G4Q:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:49945/Account/Login?ReturnUrl=%2F   (ca22a1cb)
+2019-02-27T18:36:49.4800432+07:00 0HLKSKVAK8G4Q:00000002 [INF] Executing action method "WebCoreApp.Controllers.AccountController.Login (WebCoreApp)" with arguments (["/"]) - ModelState is Valid (ba7f4ac2)
+2019-02-27T18:36:49.5288365+07:00 0HLKSKVAK8G4Q:00000002 [INF] AuthenticationScheme: "Identity.External" signed out. (d3f50c8d)
+2019-02-27T18:36:53.6531475+07:00 0HLKSKVAK8G4Q:00000002 [INF] Executing ViewResult, running view at path "/Views/Account/Login.cshtml". (9707eebe)
+2019-02-27T18:36:55.4373741+07:00 0HLKSKVAK8G4Q:00000002 [INF] Executed action "WebCoreApp.Controllers.AccountController.Login (WebCoreApp)" in 6034.0035ms (afa2e885)
+2019-02-27T18:36:55.4644642+07:00 0HLKSKVAK8G4Q:00000002 [INF] Request finished in 6133.4091ms 200 text/html; charset=utf-8 (791a596a)
+2019-02-27T18:37:16.0793168+07:00 0HLKSKVAK8G4S:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:49945/   (ca22a1cb)
+2019-02-27T18:37:16.0851791+07:00 0HLKSKVAK8G4S:00000001 [INF] Authorization failed for user: null. (a4ab1676)
+2019-02-27T18:37:16.2333674+07:00 0HLKSKVAK8G4S:00000001 [INF] Authorization failed for the request at filter '"Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter"'. (8b6446cb)
+2019-02-27T18:37:16.2394783+07:00 0HLKSKVAK8G4S:00000001 [INF] Executing ChallengeResult with authentication schemes ([]). (f3dca807)
+2019-02-27T18:37:16.2472211+07:00 0HLKSKVAK8G4S:00000001 [INF] AuthenticationScheme: "Identity.Application" was challenged. (d45f1f38)
+2019-02-27T18:37:16.2533972+07:00 0HLKSKVAK8G4S:00000001 [INF] Executed action "WebCoreApp.Controllers.HomeController.Index (WebCoreApp)" in 167.2702ms (afa2e885)
+2019-02-27T18:37:16.2642861+07:00 0HLKSKVAK8G4S:00000001 [INF] Request finished in 199.853ms 302  (791a596a)
+2019-02-27T18:37:16.2954817+07:00 0HLKSKVAK8G4S:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:49945/Account/Login?ReturnUrl=%2F   (ca22a1cb)
+2019-02-27T18:37:16.3227016+07:00 0HLKSKVAK8G4S:00000002 [INF] Executing action method "WebCoreApp.Controllers.AccountController.Login (WebCoreApp)" with arguments (["/"]) - ModelState is Valid (ba7f4ac2)
+2019-02-27T18:37:16.3486743+07:00 0HLKSKVAK8G4S:00000002 [INF] AuthenticationScheme: "Identity.External" signed out. (d3f50c8d)
+2019-02-27T18:37:16.3749961+07:00 0HLKSKVAK8G4S:00000002 [INF] Executing ViewResult, running view at path "/Views/Account/Login.cshtml". (9707eebe)
+2019-02-27T18:37:16.4179960+07:00 0HLKSKVAK8G4S:00000002 [INF] Executed action "WebCoreApp.Controllers.AccountController.Login (WebCoreApp)" in 86.804ms (afa2e885)
+2019-02-27T18:37:16.4306341+07:00 0HLKSKVAK8G4S:00000002 [INF] Request finished in 150.0378ms 200 text/html; charset=utf-8 (791a596a)
+2019-02-27T18:39:13.2468604+07:00 0HLKSKVAK8G4U:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:49945/admin   (ca22a1cb)
+2019-02-27T18:39:14.0095322+07:00 0HLKSKVAK8G4U:00000001 [INF] Executing action method "WebCoreApp.Areas.Admin.Controllers.LoginController.Index (WebCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2019-02-27T18:39:16.1023439+07:00 0HLKSKVAK8G4U:00000001 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Login/Index.cshtml". (9707eebe)
+2019-02-27T18:39:16.2063058+07:00 0HLKSKVAK8G4U:00000001 [INF] Executed action "WebCoreApp.Areas.Admin.Controllers.LoginController.Index (WebCoreApp)" in 2650.9504ms (afa2e885)
+2019-02-27T18:39:16.2319380+07:00 0HLKSKVAK8G4U:00000001 [INF] Request finished in 3121.9522ms 200 text/html; charset=utf-8 (791a596a)
+2019-02-27T18:39:16.7477278+07:00 0HLKSKVAK8G4U:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:49945/lib/font-awesome/css/font-awesome.css   (ca22a1cb)
+2019-02-27T18:39:16.8153545+07:00 0HLKSKVAK8G50:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:49945/lib/animate.css/animate.css   (ca22a1cb)
+2019-02-27T18:39:16.8170277+07:00 0HLKSKVAK8G51:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:49945/lib/nprogress/nprogress.css   (ca22a1cb)
+2019-02-27T18:39:16.8223240+07:00 0HLKSKVAK8G52:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:49945/admin-side/css/custom.css   (ca22a1cb)
+2019-02-27T18:39:18.3968478+07:00 0HLKSKVAK8G52:00000001 [INF] The file "/admin-side/css/custom.css" was not modified (f1f8d725)
+2019-02-27T18:39:18.4648753+07:00 0HLKSKVAK8G51:00000001 [INF] The file "/lib/nprogress/nprogress.css" was not modified (f1f8d725)
+2019-02-27T18:39:18.4839248+07:00 0HLKSKVAK8G4U:00000002 [INF] The file "/lib/font-awesome/css/font-awesome.css" was not modified (f1f8d725)
+2019-02-27T18:39:18.5070660+07:00 0HLKSKVAK8G51:00000001 [INF] Request finished in 1743.2835ms 304 text/css (791a596a)
+2019-02-27T18:39:18.5408195+07:00 0HLKSKVAK8G50:00000001 [INF] The file "/lib/animate.css/animate.css" was not modified (f1f8d725)
+2019-02-27T18:39:18.5418700+07:00 0HLKSKVAK8G52:00000001 [INF] Request finished in 1656.4688ms 304 text/css (791a596a)
+2019-02-27T18:39:18.5686540+07:00 0HLKSKVAK8G50:00000001 [INF] Request finished in 1818.2968ms 304 text/css (791a596a)
+2019-02-27T18:39:18.5962699+07:00 0HLKSKVAK8G4U:00000002 [INF] Request finished in 1767.3302ms 304 text/css (791a596a)
+2019-02-27T18:39:25.1821682+07:00 0HLKSKVAK8G50:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:49945/lib/jquery-validation/dist/additional-methods.js   (ca22a1cb)
+2019-02-27T18:39:25.1884610+07:00 0HLKSKVAK8G50:00000002 [INF] The file "/lib/jquery-validation/dist/additional-methods.js" was not modified (f1f8d725)
+2019-02-27T18:39:25.1970892+07:00 0HLKSKVAK8G50:00000002 [INF] Request finished in 12.1853ms 304 application/javascript (791a596a)
+2019-02-27T18:39:25.2296325+07:00 0HLKSKVAK8G4U:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:49945/lib/jquery-validation/localization/messages_vi.js   (ca22a1cb)
+2019-02-27T18:39:25.2435832+07:00 0HLKSKVAK8G4U:00000003 [INF] The file "/lib/jquery-validation/localization/messages_vi.js" was not modified (f1f8d725)
+2019-02-27T18:39:25.2696853+07:00 0HLKSKVAK8G4U:00000003 [INF] Request finished in 42.7759ms 304 application/javascript (791a596a)
+2019-02-27T18:39:25.3916304+07:00 0HLKSKVAK8G51:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:49945/app/shared/tedu.js   (ca22a1cb)
+2019-02-27T18:39:25.3926880+07:00 0HLKSKVAK8G52:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:49945/app/controllers/login/index.js   (ca22a1cb)
+2019-02-27T18:39:25.4633333+07:00 0HLKSKVAK8G51:00000002 [INF] The file "/app/shared/tedu.js" was not modified (f1f8d725)
+2019-02-27T18:39:25.4867972+07:00 0HLKSKVAK8G52:00000002 [INF] The file "/app/controllers/login/index.js" was not modified (f1f8d725)
+2019-02-27T18:39:25.5358477+07:00 0HLKSKVAK8G52:00000002 [INF] Request finished in 166.5046ms 304 application/javascript (791a596a)
+2019-02-27T18:39:25.5867468+07:00 0HLKSKVAK8G51:00000002 [INF] Request finished in 143.5891ms 304 application/javascript (791a596a)
+2019-02-27T18:39:26.3590769+07:00 0HLKSKVAK8G52:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:49945/lib/font-awesome/fonts/fontawesome-webfont.woff2?v=4.7.0   (ca22a1cb)
+2019-02-27T18:39:26.3859078+07:00 0HLKSKVAK8G52:00000003 [INF] The file "/lib/font-awesome/fonts/fontawesome-webfont.woff2" was not modified (f1f8d725)
+2019-02-27T18:39:26.4127026+07:00 0HLKSKVAK8G52:00000003 [INF] Request finished in 35.7469ms 304 font/woff2 (791a596a)
+2019-02-27T18:41:50.9473764+07:00  [INF] Entity Framework Core "2.0.3-rtm-10026" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=WebCoreApp.Data.EF " (9958f5bb)
+2019-02-27T18:41:52.4967315+07:00  [INF] Executed DbCommand ("105"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppRoles] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2019-02-27T18:41:52.5692390+07:00  [INF] Executed DbCommand ("18"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppUsers] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2019-02-27T18:41:52.6159449+07:00  [INF] Executed DbCommand ("32"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Functions] AS [f]" (0723d8ff)
+2019-02-27T18:41:52.6994051+07:00  [INF] Executed DbCommand ("33"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Footers] AS [x]
+WHERE [x].[Id] = 'DefaultFooterId'" (0723d8ff)
+2019-02-27T18:41:52.7311608+07:00  [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Colors] AS [c]" (0723d8ff)
+2019-02-27T18:41:52.7933966+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [AdvertistmentPages] AS [a]" (0723d8ff)
+2019-02-27T18:41:52.8365676+07:00  [INF] Executed DbCommand ("12"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Slides] AS [s]" (0723d8ff)
+2019-02-27T18:41:52.8715623+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Sizes] AS [s]" (0723d8ff)
+2019-02-27T18:41:52.9063734+07:00  [INF] Executed DbCommand ("21"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [ProductCategories] AS [p]" (0723d8ff)
+2019-02-27T18:41:52.9703642+07:00  [INF] Executed DbCommand ("27"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeTitle')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2019-02-27T18:41:52.9862037+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaKeyword')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2019-02-27T18:41:53.0284981+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaDescription')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2019-02-27T18:42:07.1668600+07:00 0HLKSL28TD40M:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:49945/   (ca22a1cb)
+2019-02-27T18:42:08.8088103+07:00 0HLKSL28TD40M:00000001 [INF] Authorization failed for user: null. (a4ab1676)
+2019-02-27T18:42:08.8229926+07:00 0HLKSL28TD40M:00000001 [INF] Authorization failed for the request at filter '"Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter"'. (8b6446cb)
+2019-02-27T18:42:08.8407570+07:00 0HLKSL28TD40M:00000001 [INF] Executing ChallengeResult with authentication schemes ([]). (f3dca807)
+2019-02-27T18:42:08.8699392+07:00 0HLKSL28TD40M:00000001 [INF] AuthenticationScheme: "Identity.Application" was challenged. (d45f1f38)
+2019-02-27T18:42:08.8900233+07:00 0HLKSL28TD40M:00000001 [INF] Executed action "WebCoreApp.Controllers.HomeController.Index (WebCoreApp)" in 76.8458ms (afa2e885)
+2019-02-27T18:42:09.0205815+07:00 0HLKSL28TD40M:00000001 [INF] Request finished in 2499.7827ms 302  (791a596a)
+2019-02-27T18:42:09.0649269+07:00 0HLKSL28TD40M:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:49945/Account/Login?ReturnUrl=%2F   (ca22a1cb)
+2019-02-27T18:42:09.1708372+07:00 0HLKSL28TD40M:00000002 [INF] Executing action method "WebCoreApp.Controllers.AccountController.Login (WebCoreApp)" with arguments (["/"]) - ModelState is Valid (ba7f4ac2)
+2019-02-27T18:42:09.3685862+07:00 0HLKSL28TD40M:00000002 [INF] AuthenticationScheme: "Identity.External" signed out. (d3f50c8d)
+2019-02-27T18:42:22.0646089+07:00 0HLKSL28TD40M:00000002 [INF] Executing ViewResult, running view at path "/Views/Account/Login.cshtml". (9707eebe)
+2019-02-27T18:42:23.0912488+07:00 0HLKSL28TD40M:00000002 [INF] Executed action "WebCoreApp.Controllers.AccountController.Login (WebCoreApp)" in 13978.204ms (afa2e885)
+2019-02-27T18:42:23.1303991+07:00 0HLKSL28TD40M:00000002 [INF] Request finished in 14064.8931ms 200 text/html; charset=utf-8 (791a596a)
+2019-02-27T18:42:41.9611553+07:00 0HLKSL28TD40O:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:49945/admin/login   (ca22a1cb)
+2019-02-27T18:42:41.9724654+07:00 0HLKSL28TD40O:00000001 [INF] Executing action method "WebCoreApp.Areas.Admin.Controllers.LoginController.Index (WebCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2019-02-27T18:42:42.4648973+07:00 0HLKSL28TD40O:00000001 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Login/Index.cshtml". (9707eebe)
+2019-02-27T18:42:42.5170359+07:00 0HLKSL28TD40O:00000001 [INF] Executed action "WebCoreApp.Areas.Admin.Controllers.LoginController.Index (WebCoreApp)" in 541.8771ms (afa2e885)
+2019-02-27T18:42:42.5236199+07:00 0HLKSL28TD40O:00000001 [INF] Request finished in 571.0491ms 200 text/html; charset=utf-8 (791a596a)
+2019-02-27T18:42:55.5041089+07:00 0HLKSL28TD40Q:00000001 [INF] Request starting HTTP/1.1 POST http://localhost:49945/admin/login/authen application/x-www-form-urlencoded; charset=UTF-8 33 (ca22a1cb)
+2019-02-27T18:42:57.6319128+07:00 0HLKSL28TD40Q:00000001 [INF] Executing action method "WebCoreApp.Areas.Admin.Controllers.LoginController.Authen (WebCoreApp)" with arguments (["WebCoreApp.Models.AccountViewModels.LoginViewModel"]) - ModelState is Valid (ba7f4ac2)
+2019-02-27T18:42:59.9660468+07:00 0HLKSL28TD40Q:00000001 [INF] Entity Framework Core "2.0.3-rtm-10026" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=WebCoreApp.Data.EF " (9958f5bb)
+2019-02-27T18:43:04.4988736+07:00 0HLKSL28TD40Q:00000001 [INF] Executed DbCommand ("875"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[Avatar], [u].[Balance], [u].[BirthDay], [u].[ConcurrencyStamp], [u].[DateCreated], [u].[DateModified], [u].[Email], [u].[EmailConfirmed], [u].[FullName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[Status], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AppUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2019-02-27T18:43:05.9317728+07:00 0HLKSL28TD40Q:00000001 [INF] Executed DbCommand ("456"ms) [Parameters=["@__user_Id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [uc].[Id], [uc].[ClaimType], [uc].[ClaimValue], [uc].[UserId]
+FROM [AppUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0" (0723d8ff)
+2019-02-27T18:43:06.5521358+07:00 0HLKSL28TD40Q:00000001 [INF] Executed DbCommand ("488"ms) [Parameters=["@__userId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2019-02-27T18:43:06.6151956+07:00 0HLKSL28TD40Q:00000001 [INF] Executed DbCommand ("41"ms) [Parameters=["@__normalizedName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Description], [r].[Name], [r].[NormalizedName]
+FROM [AppRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0" (0723d8ff)
+2019-02-27T18:43:06.6639576+07:00 0HLKSL28TD40Q:00000001 [INF] Executed DbCommand ("20"ms) [Parameters=["@__role_Id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [rc].[ClaimType], [rc].[ClaimValue]
+FROM [AppRoleClaims] AS [rc]
+WHERE [rc].[RoleId] = @__role_Id_0" (0723d8ff)
+2019-02-27T18:43:06.6742716+07:00 0HLKSL28TD40Q:00000001 [INF] Executed DbCommand ("2"ms) [Parameters=["@__userId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2019-02-27T18:43:06.6882128+07:00 0HLKSL28TD40Q:00000001 [INF] AuthenticationScheme: "Identity.Application" signed in. (c66dd7e7)
+2019-02-27T18:43:06.6978699+07:00 0HLKSL28TD40Q:00000001 [INF] User logged in. (fdce0db4)
+2019-02-27T18:43:06.7111057+07:00 0HLKSL28TD40Q:00000001 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2019-02-27T18:43:06.8788491+07:00 0HLKSL28TD40Q:00000001 [INF] Executed action "WebCoreApp.Areas.Admin.Controllers.LoginController.Authen (WebCoreApp)" in 11314.863ms (afa2e885)
+2019-02-27T18:43:06.8879372+07:00 0HLKSL28TD40Q:00000001 [INF] Request finished in 11402.4848ms 200 application/json; charset=utf-8 (791a596a)
+2019-02-27T18:43:06.9990943+07:00 0HLKSL28TD40Q:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:49945/Admin/Home/Index   (ca22a1cb)
+2019-02-27T18:43:07.0166367+07:00 0HLKSL28TD40Q:00000002 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2019-02-27T18:43:07.0339160+07:00 0HLKSL28TD40Q:00000002 [INF] Executing action method "WebCoreApp.Areas.Admin.Controllers.HomeController.Index (WebCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2019-02-27T18:43:07.2581388+07:00 0HLKSL28TD40Q:00000002 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Home/Index.cshtml". (9707eebe)
+2019-02-27T18:43:07.6710826+07:00 0HLKSL28TD40Q:00000002 [INF] Executed action "WebCoreApp.Areas.Admin.Controllers.HomeController.Index (WebCoreApp)" in 635.8351ms (afa2e885)
+2019-02-27T18:43:07.7505350+07:00 0HLKSL28TD40Q:00000002 [INF] Request finished in 732.1538ms 200 text/html; charset=utf-8 (791a596a)
+2019-02-27T18:43:08.4558706+07:00 0HLKSL28TD40Q:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:49945/lib/bootstrap-daterangepicker/daterangepicker.css   (ca22a1cb)
+2019-02-27T18:43:08.4906964+07:00 0HLKSL28TD40R:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:49945/lib/fastclick/lib/fastclick.js   (ca22a1cb)
+2019-02-27T18:43:08.4978772+07:00 0HLKSL28TD40S:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:49945/lib/nprogress/nprogress.js   (ca22a1cb)
+2019-02-27T18:43:08.5580699+07:00 0HLKSL28TD40Q:00000003 [INF] The file "/lib/bootstrap-daterangepicker/daterangepicker.css" was not modified (f1f8d725)
+2019-02-27T18:43:08.5680109+07:00 0HLKSL28TD40R:00000001 [INF] The file "/lib/fastclick/lib/fastclick.js" was not modified (f1f8d725)
+2019-02-27T18:43:08.6391045+07:00 0HLKSL28TD40S:00000001 [INF] The file "/lib/nprogress/nprogress.js" was not modified (f1f8d725)
+2019-02-27T18:43:08.6641653+07:00 0HLKSL28TD40R:00000001 [INF] Request finished in 103.554ms 304 application/javascript (791a596a)
+2019-02-27T18:43:08.6661213+07:00 0HLKSL28TD40Q:00000003 [INF] Request finished in 117.9006ms 304 text/css (791a596a)
+2019-02-27T18:43:08.7186034+07:00 0HLKSL28TD40S:00000001 [INF] Request finished in 148.8431ms 304 application/javascript (791a596a)
+2019-02-27T18:43:08.7251967+07:00 0HLKSL28TD40R:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:49945/lib/jquery-sparkline/dist/jquery.sparkline.js   (ca22a1cb)
+2019-02-27T18:43:08.7554512+07:00 0HLKSL28TD40Q:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:49945/lib/Chart.js/dist/Chart.js   (ca22a1cb)
+2019-02-27T18:43:08.7579883+07:00 0HLKSL28TD40R:00000002 [INF] The file "/lib/jquery-sparkline/dist/jquery.sparkline.js" was not modified (f1f8d725)
+2019-02-27T18:43:08.7670308+07:00 0HLKSL28TD40Q:00000004 [INF] The file "/lib/Chart.js/dist/Chart.js" was not modified (f1f8d725)
+2019-02-27T18:43:08.7732051+07:00 0HLKSL28TD40Q:00000004 [INF] Request finished in 72.5967ms 304 application/javascript (791a596a)
+2019-02-27T18:43:08.8071170+07:00 0HLKSL28TD40R:00000002 [INF] Request finished in 63.2802ms 304 application/javascript (791a596a)
+2019-02-27T18:43:08.8601019+07:00 0HLKSL28TD40Q:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:49945/lib/moment/moment.js   (ca22a1cb)
+2019-02-27T18:43:08.9063677+07:00 0HLKSL28TD40Q:00000005 [INF] The file "/lib/moment/moment.js" was not modified (f1f8d725)
+2019-02-27T18:43:08.9158980+07:00 0HLKSL28TD40Q:00000005 [INF] Request finished in 54.6507ms 304 application/javascript (791a596a)
+2019-02-27T18:43:09.4801874+07:00 0HLKSL28TD40R:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:49945/lib/bootstrap-daterangepicker/daterangepicker.js   (ca22a1cb)
+2019-02-27T18:43:09.5302886+07:00 0HLKSL28TD40S:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:49945/lib/bootbox/bootbox.js   (ca22a1cb)
+2019-02-27T18:43:09.5477559+07:00 0HLKSL28TD40T:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:49945/lib/bootstrap/dist/fonts/glyphicons-halflings-regular.woff2   (ca22a1cb)
+2019-02-27T18:43:09.5732120+07:00 0HLKSL28TD40Q:00000006 [INF] Request starting HTTP/1.1 GET http://localhost:49945/admin-side/js/custom.js   (ca22a1cb)
+2019-02-27T18:43:09.6037190+07:00 0HLKSL28TD40R:00000003 [INF] The file "/lib/bootstrap-daterangepicker/daterangepicker.js" was not modified (f1f8d725)
+2019-02-27T18:43:09.6342084+07:00 0HLKSL28TD40R:00000003 [INF] Request finished in 133.7275ms 304 application/javascript (791a596a)
+2019-02-27T18:43:09.6667719+07:00 0HLKSL28TD40Q:00000006 [INF] The file "/admin-side/js/custom.js" was not modified (f1f8d725)
+2019-02-27T18:43:09.6904529+07:00 0HLKSL28TD40Q:00000006 [INF] Request finished in 195.0508ms 304 application/javascript (791a596a)
+2019-02-27T18:43:09.7152423+07:00 0HLKSL28TD40U:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:49945/admin-side/images/img.jpg   (ca22a1cb)
+2019-02-27T18:43:09.7518037+07:00 0HLKSL28TD40U:00000001 [INF] The file "/admin-side/images/img.jpg" was not modified (f1f8d725)
+2019-02-27T18:43:09.7601900+07:00 0HLKSL28TD40T:00000001 [INF] The file "/lib/bootstrap/dist/fonts/glyphicons-halflings-regular.woff2" was not modified (f1f8d725)
+2019-02-27T18:43:09.7901787+07:00 0HLKSL28TD40S:00000002 [INF] The file "/lib/bootbox/bootbox.js" was not modified (f1f8d725)
+2019-02-27T18:43:09.7967850+07:00 0HLKSL28TD40S:00000002 [INF] Request finished in 318.045ms 304 application/javascript (791a596a)
+2019-02-27T18:43:09.8472956+07:00 0HLKSL28TD40T:00000001 [INF] Request finished in 287.9939ms 304 font/woff2 (791a596a)
+2019-02-27T18:43:09.8522160+07:00 0HLKSL28TD40U:00000001 [INF] Request finished in 178.2909ms 304 image/jpeg (791a596a)
+2019-02-27T19:02:18.3399760+07:00  [INF] Entity Framework Core "2.0.3-rtm-10026" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=WebCoreApp.Data.EF " (9958f5bb)
+2019-02-27T19:02:23.1183583+07:00  [INF] Executed DbCommand ("251"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppRoles] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2019-02-27T19:02:23.3105007+07:00  [INF] Executed DbCommand ("50"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppUsers] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2019-02-27T19:02:23.4417652+07:00  [INF] Executed DbCommand ("90"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Functions] AS [f]" (0723d8ff)
+2019-02-27T19:02:23.5255357+07:00  [INF] Executed DbCommand ("30"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Footers] AS [x]
+WHERE [x].[Id] = 'DefaultFooterId'" (0723d8ff)
+2019-02-27T19:02:23.5597784+07:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Colors] AS [c]" (0723d8ff)
+2019-02-27T19:02:23.6772362+07:00  [INF] Executed DbCommand ("5"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [AdvertistmentPages] AS [a]" (0723d8ff)
+2019-02-27T19:02:23.7676839+07:00  [INF] Executed DbCommand ("19"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Slides] AS [s]" (0723d8ff)
+2019-02-27T19:02:23.7993932+07:00  [INF] Executed DbCommand ("16"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Sizes] AS [s]" (0723d8ff)
+2019-02-27T19:02:23.8511641+07:00  [INF] Executed DbCommand ("12"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [ProductCategories] AS [p]" (0723d8ff)
+2019-02-27T19:02:23.9563928+07:00  [INF] Executed DbCommand ("29"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeTitle')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2019-02-27T19:02:23.9933118+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaKeyword')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2019-02-27T19:02:24.0252991+07:00  [INF] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaDescription')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2019-02-27T19:02:33.2297094+07:00 0HLKSLDNOUCLO:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:49945/   (ca22a1cb)
+2019-02-27T19:02:38.1681669+07:00 0HLKSLDNOUCLO:00000001 [INF] Authorization failed for user: null. (a4ab1676)
+2019-02-27T19:02:38.1766758+07:00 0HLKSLDNOUCLO:00000001 [INF] Authorization failed for the request at filter '"Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter"'. (8b6446cb)
+2019-02-27T19:02:38.1882068+07:00 0HLKSLDNOUCLO:00000001 [INF] Executing ChallengeResult with authentication schemes ([]). (f3dca807)
+2019-02-27T19:02:38.2610987+07:00 0HLKSLDNOUCLO:00000001 [INF] AuthenticationScheme: "Identity.Application" was challenged. (d45f1f38)
+2019-02-27T19:02:38.3046032+07:00 0HLKSLDNOUCLO:00000001 [INF] Executed action "WebCoreApp.Controllers.HomeController.Index (WebCoreApp)" in 127.6547ms (afa2e885)
+2019-02-27T19:02:38.3460385+07:00 0HLKSLDNOUCLO:00000001 [INF] Request finished in 7314.1588ms 302  (791a596a)
+2019-02-27T19:02:38.4322650+07:00 0HLKSLDNOUCLO:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:49945/Account/Login?ReturnUrl=%2F   (ca22a1cb)
+2019-02-27T19:02:38.7105412+07:00 0HLKSLDNOUCLO:00000002 [INF] Executing action method "WebCoreApp.Controllers.AccountController.Login (WebCoreApp)" with arguments (["/"]) - ModelState is Valid (ba7f4ac2)
+2019-02-27T19:02:38.8016560+07:00 0HLKSLDNOUCLO:00000002 [INF] AuthenticationScheme: "Identity.External" signed out. (d3f50c8d)
+2019-02-27T19:15:54.8062681+07:00  [INF] Entity Framework Core "2.0.3-rtm-10026" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=WebCoreApp.Data.EF " (9958f5bb)
+2019-02-27T19:15:58.8377357+07:00  [INF] Executed DbCommand ("209"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppRoles] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2019-02-27T19:15:59.1094234+07:00  [INF] Executed DbCommand ("28"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppUsers] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2019-02-27T19:15:59.1983644+07:00  [INF] Executed DbCommand ("52"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Functions] AS [f]" (0723d8ff)
+2019-02-27T19:15:59.3458224+07:00  [INF] Executed DbCommand ("43"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Footers] AS [x]
+WHERE [x].[Id] = 'DefaultFooterId'" (0723d8ff)
+2019-02-27T19:15:59.3699185+07:00  [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Colors] AS [c]" (0723d8ff)
+2019-02-27T19:15:59.5355899+07:00  [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [AdvertistmentPages] AS [a]" (0723d8ff)
+2019-02-27T19:15:59.5769998+07:00  [INF] Executed DbCommand ("17"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Slides] AS [s]" (0723d8ff)
+2019-02-27T19:15:59.6240946+07:00  [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Sizes] AS [s]" (0723d8ff)
+2019-02-27T19:15:59.6985380+07:00  [INF] Executed DbCommand ("29"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [ProductCategories] AS [p]" (0723d8ff)
+2019-02-27T19:15:59.9338192+07:00  [INF] Executed DbCommand ("54"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeTitle')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2019-02-27T19:15:59.9453540+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaKeyword')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2019-02-27T19:15:59.9807997+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaDescription')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2019-02-27T19:16:46.1979726+07:00 0HLKSLLB3IU17:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:49945/   (ca22a1cb)
+2019-02-27T19:16:52.6453507+07:00 0HLKSLLB3IU17:00000001 [INF] Authorization failed for user: null. (a4ab1676)
+2019-02-27T19:16:52.6742885+07:00 0HLKSLLB3IU17:00000001 [INF] Authorization failed for the request at filter '"Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter"'. (8b6446cb)
+2019-02-27T19:16:52.7031742+07:00 0HLKSLLB3IU17:00000001 [INF] Executing ChallengeResult with authentication schemes ([]). (f3dca807)
+2019-02-27T19:16:52.8401352+07:00 0HLKSLLB3IU17:00000001 [INF] AuthenticationScheme: "Identity.Application" was challenged. (d45f1f38)
+2019-02-27T19:16:52.8835092+07:00 0HLKSLLB3IU17:00000001 [INF] Executed action "WebCoreApp.Controllers.HomeController.Index (WebCoreApp)" in 251.213ms (afa2e885)
+2019-02-27T19:16:52.9669313+07:00 0HLKSLLB3IU17:00000001 [INF] Request finished in 7365.139ms 302  (791a596a)
+2019-02-27T19:16:53.5943432+07:00 0HLKSLLB3IU17:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:49945/Account/Login?ReturnUrl=%2F   (ca22a1cb)
+2019-02-27T19:16:54.7157077+07:00 0HLKSLLB3IU17:00000002 [INF] Executing action method "WebCoreApp.Controllers.AccountController.Login (WebCoreApp)" with arguments (["/"]) - ModelState is Valid (ba7f4ac2)
+2019-02-27T19:16:55.1254498+07:00 0HLKSLLB3IU17:00000002 [INF] AuthenticationScheme: "Identity.External" signed out. (d3f50c8d)
+2019-02-27T19:17:18.1373236+07:00 0HLKSLLB3IU17:00000002 [INF] Executing ViewResult, running view at path "/Views/Account/Login.cshtml". (9707eebe)
+2019-02-27T19:17:19.4936009+07:00 0HLKSLLB3IU17:00000002 [INF] Executed action "WebCoreApp.Controllers.AccountController.Login (WebCoreApp)" in 25683.5591ms (afa2e885)
+2019-02-27T19:17:19.5128154+07:00 0HLKSLLB3IU17:00000002 [INF] Request finished in 25915.9897ms 200 text/html; charset=utf-8 (791a596a)
+2019-02-27T19:18:15.1386159+07:00 0HLKSLLB3IU19:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:49945/   (ca22a1cb)
+2019-02-27T19:18:15.1764093+07:00 0HLKSLLB3IU19:00000001 [INF] Authorization failed for user: null. (a4ab1676)
+2019-02-27T19:18:15.2218528+07:00 0HLKSLLB3IU19:00000001 [INF] Authorization failed for the request at filter '"Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter"'. (8b6446cb)
+2019-02-27T19:18:15.2478700+07:00 0HLKSLLB3IU19:00000001 [INF] Executing ChallengeResult with authentication schemes ([]). (f3dca807)
+2019-02-27T19:18:15.2740074+07:00 0HLKSLLB3IU19:00000001 [INF] AuthenticationScheme: "Identity.Application" was challenged. (d45f1f38)
+2019-02-27T19:18:15.3200832+07:00 0HLKSLLB3IU19:00000001 [INF] Executed action "WebCoreApp.Controllers.HomeController.Index (WebCoreApp)" in 123.5566ms (afa2e885)
+2019-02-27T19:18:15.3468763+07:00 0HLKSLLB3IU19:00000001 [INF] Request finished in 188.7163ms 302  (791a596a)
+2019-02-27T19:18:15.3546547+07:00 0HLKSLLB3IU19:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:49945/Account/Login?ReturnUrl=%2F   (ca22a1cb)
+2019-02-27T19:18:15.4212035+07:00 0HLKSLLB3IU19:00000002 [INF] Executing action method "WebCoreApp.Controllers.AccountController.Login (WebCoreApp)" with arguments (["/"]) - ModelState is Valid (ba7f4ac2)
+2019-02-27T19:18:15.4484988+07:00 0HLKSLLB3IU19:00000002 [INF] AuthenticationScheme: "Identity.External" signed out. (d3f50c8d)
+2019-02-27T19:18:15.4928672+07:00 0HLKSLLB3IU19:00000002 [INF] Executing ViewResult, running view at path "/Views/Account/Login.cshtml". (9707eebe)
+2019-02-27T19:18:15.5318497+07:00 0HLKSLLB3IU19:00000002 [INF] Executed action "WebCoreApp.Controllers.AccountController.Login (WebCoreApp)" in 145.4565ms (afa2e885)
+2019-02-27T19:18:15.5589004+07:00 0HLKSLLB3IU19:00000002 [INF] Request finished in 182.476ms 200 text/html; charset=utf-8 (791a596a)
+2019-02-27T19:18:16.9612429+07:00 0HLKSLLB3IU19:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:49945/   (ca22a1cb)
+2019-02-27T19:18:16.9707720+07:00 0HLKSLLB3IU19:00000003 [INF] Authorization failed for user: null. (a4ab1676)
+2019-02-27T19:18:16.9966524+07:00 0HLKSLLB3IU19:00000003 [INF] Authorization failed for the request at filter '"Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter"'. (8b6446cb)
+2019-02-27T19:18:17.0233260+07:00 0HLKSLLB3IU19:00000003 [INF] Executing ChallengeResult with authentication schemes ([]). (f3dca807)
+2019-02-27T19:18:17.0705570+07:00 0HLKSLLB3IU19:00000003 [INF] AuthenticationScheme: "Identity.Application" was challenged. (d45f1f38)
+2019-02-27T19:18:17.0970525+07:00 0HLKSLLB3IU19:00000003 [INF] Executed action "WebCoreApp.Controllers.HomeController.Index (WebCoreApp)" in 108.7082ms (afa2e885)
+2019-02-27T19:18:17.1442324+07:00 0HLKSLLB3IU19:00000003 [INF] Request finished in 144.4283ms 302  (791a596a)
+2019-02-27T19:18:17.1736343+07:00 0HLKSLLB3IU19:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:49945/Account/Login?ReturnUrl=%2F   (ca22a1cb)
+2019-02-27T19:18:17.1998602+07:00 0HLKSLLB3IU19:00000004 [INF] Executing action method "WebCoreApp.Controllers.AccountController.Login (WebCoreApp)" with arguments (["/"]) - ModelState is Valid (ba7f4ac2)
+2019-02-27T19:18:17.2265490+07:00 0HLKSLLB3IU19:00000004 [INF] AuthenticationScheme: "Identity.External" signed out. (d3f50c8d)
+2019-02-27T19:18:17.2542725+07:00 0HLKSLLB3IU19:00000004 [INF] Executing ViewResult, running view at path "/Views/Account/Login.cshtml". (9707eebe)
+2019-02-27T19:18:17.2892228+07:00 0HLKSLLB3IU19:00000004 [INF] Executed action "WebCoreApp.Controllers.AccountController.Login (WebCoreApp)" in 82.1625ms (afa2e885)
+2019-02-27T19:18:17.3238124+07:00 0HLKSLLB3IU19:00000004 [INF] Request finished in 141.2315ms 200 text/html; charset=utf-8 (791a596a)
+2019-02-27T19:18:17.8537497+07:00 0HLKSLLB3IU19:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:49945/   (ca22a1cb)
+2019-02-27T19:18:17.8588807+07:00 0HLKSLLB3IU19:00000005 [INF] Authorization failed for user: null. (a4ab1676)
+2019-02-27T19:18:17.9069092+07:00 0HLKSLLB3IU19:00000005 [INF] Authorization failed for the request at filter '"Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter"'. (8b6446cb)
+2019-02-27T19:18:17.9533224+07:00 0HLKSLLB3IU19:00000005 [INF] Executing ChallengeResult with authentication schemes ([]). (f3dca807)
+2019-02-27T19:18:17.9786968+07:00 0HLKSLLB3IU19:00000005 [INF] AuthenticationScheme: "Identity.Application" was challenged. (d45f1f38)
+2019-02-27T19:18:18.0034515+07:00 0HLKSLLB3IU19:00000005 [INF] Executed action "WebCoreApp.Controllers.HomeController.Index (WebCoreApp)" in 125.0756ms (afa2e885)
+2019-02-27T19:18:18.0312673+07:00 0HLKSLLB3IU19:00000005 [INF] Request finished in 180.6875ms 302  (791a596a)
+2019-02-27T19:18:18.0594689+07:00 0HLKSLLB3IU19:00000006 [INF] Request starting HTTP/1.1 GET http://localhost:49945/Account/Login?ReturnUrl=%2F   (ca22a1cb)
+2019-02-27T19:18:18.0849487+07:00 0HLKSLLB3IU19:00000006 [INF] Executing action method "WebCoreApp.Controllers.AccountController.Login (WebCoreApp)" with arguments (["/"]) - ModelState is Valid (ba7f4ac2)
+2019-02-27T19:18:18.1105081+07:00 0HLKSLLB3IU19:00000006 [INF] AuthenticationScheme: "Identity.External" signed out. (d3f50c8d)
+2019-02-27T19:18:18.1355636+07:00 0HLKSLLB3IU19:00000006 [INF] Executing ViewResult, running view at path "/Views/Account/Login.cshtml". (9707eebe)
+2019-02-27T19:18:18.1451510+07:00 0HLKSLLB3IU19:00000006 [INF] Executed action "WebCoreApp.Controllers.AccountController.Login (WebCoreApp)" in 77.7329ms (afa2e885)
+2019-02-27T19:18:18.1695806+07:00 0HLKSLLB3IU19:00000006 [INF] Request finished in 111.6141ms 200 text/html; charset=utf-8 (791a596a)
+2019-02-27T19:18:19.3573417+07:00 0HLKSLLB3IU19:00000007 [INF] Request starting HTTP/1.1 GET http://localhost:49945/   (ca22a1cb)
+2019-02-27T19:18:19.3670200+07:00 0HLKSLLB3IU19:00000007 [INF] Authorization failed for user: null. (a4ab1676)
+2019-02-27T19:18:19.3927416+07:00 0HLKSLLB3IU19:00000007 [INF] Authorization failed for the request at filter '"Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter"'. (8b6446cb)
+2019-02-27T19:18:19.4403459+07:00 0HLKSLLB3IU19:00000007 [INF] Executing ChallengeResult with authentication schemes ([]). (f3dca807)
+2019-02-27T19:18:19.4469444+07:00 0HLKSLLB3IU19:00000007 [INF] AuthenticationScheme: "Identity.Application" was challenged. (d45f1f38)
+2019-02-27T19:18:19.4544521+07:00 0HLKSLLB3IU19:00000007 [INF] Executed action "WebCoreApp.Controllers.HomeController.Index (WebCoreApp)" in 89.5653ms (afa2e885)
+2019-02-27T19:18:19.4612406+07:00 0HLKSLLB3IU19:00000007 [INF] Request finished in 107.0097ms 302  (791a596a)
+2019-02-27T19:18:19.4703861+07:00 0HLKSLLB3IU19:00000008 [INF] Request starting HTTP/1.1 GET http://localhost:49945/Account/Login?ReturnUrl=%2F   (ca22a1cb)
+2019-02-27T19:18:19.4773788+07:00 0HLKSLLB3IU19:00000008 [INF] Executing action method "WebCoreApp.Controllers.AccountController.Login (WebCoreApp)" with arguments (["/"]) - ModelState is Valid (ba7f4ac2)
+2019-02-27T19:18:19.4841096+07:00 0HLKSLLB3IU19:00000008 [INF] AuthenticationScheme: "Identity.External" signed out. (d3f50c8d)
+2019-02-27T19:18:19.4905519+07:00 0HLKSLLB3IU19:00000008 [INF] Executing ViewResult, running view at path "/Views/Account/Login.cshtml". (9707eebe)
+2019-02-27T19:18:19.5068629+07:00 0HLKSLLB3IU19:00000008 [INF] Executed action "WebCoreApp.Controllers.AccountController.Login (WebCoreApp)" in 21.7688ms (afa2e885)
+2019-02-27T19:18:19.5253016+07:00 0HLKSLLB3IU19:00000008 [INF] Request finished in 43.4466ms 200 text/html; charset=utf-8 (791a596a)
+2019-02-27T19:18:20.0880823+07:00 0HLKSLLB3IU1C:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:49945/   (ca22a1cb)
+2019-02-27T19:18:20.1003566+07:00 0HLKSLLB3IU1C:00000001 [INF] Authorization failed for user: null. (a4ab1676)
+2019-02-27T19:18:20.1090088+07:00 0HLKSLLB3IU1C:00000001 [INF] Authorization failed for the request at filter '"Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter"'. (8b6446cb)
+2019-02-27T19:18:20.1196398+07:00 0HLKSLLB3IU1C:00000001 [INF] Executing ChallengeResult with authentication schemes ([]). (f3dca807)
+2019-02-27T19:18:20.1351789+07:00 0HLKSLLB3IU1C:00000001 [INF] AuthenticationScheme: "Identity.Application" was challenged. (d45f1f38)
+2019-02-27T19:18:20.1630511+07:00 0HLKSLLB3IU1C:00000001 [INF] Executed action "WebCoreApp.Controllers.HomeController.Index (WebCoreApp)" in 46.3603ms (afa2e885)
+2019-02-27T19:18:20.1902182+07:00 0HLKSLLB3IU1C:00000001 [INF] Request finished in 85.5698ms 302  (791a596a)
+2019-02-27T19:18:20.2202531+07:00 0HLKSLLB3IU1C:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:49945/Account/Login?ReturnUrl=%2F   (ca22a1cb)
+2019-02-27T19:18:20.4002612+07:00 0HLKSLLB3IU1C:00000002 [INF] Executing action method "WebCoreApp.Controllers.AccountController.Login (WebCoreApp)" with arguments (["/"]) - ModelState is Valid (ba7f4ac2)
+2019-02-27T19:18:20.4260812+07:00 0HLKSLLB3IU1C:00000002 [INF] AuthenticationScheme: "Identity.External" signed out. (d3f50c8d)
+2019-02-27T19:18:20.4323401+07:00 0HLKSLLB3IU1C:00000002 [INF] Executing ViewResult, running view at path "/Views/Account/Login.cshtml". (9707eebe)
+2019-02-27T19:18:20.4477075+07:00 0HLKSLLB3IU1C:00000002 [INF] Executed action "WebCoreApp.Controllers.AccountController.Login (WebCoreApp)" in 214.2193ms (afa2e885)
+2019-02-27T19:18:20.4603569+07:00 0HLKSLLB3IU1C:00000002 [INF] Request finished in 255.1962ms 200 text/html; charset=utf-8 (791a596a)
+2019-02-27T19:18:21.2284211+07:00 0HLKSLLB3IU1C:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:49945/   (ca22a1cb)
+2019-02-27T19:18:21.2375817+07:00 0HLKSLLB3IU1C:00000003 [INF] Authorization failed for user: null. (a4ab1676)
+2019-02-27T19:18:21.2848920+07:00 0HLKSLLB3IU1C:00000003 [INF] Authorization failed for the request at filter '"Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter"'. (8b6446cb)
+2019-02-27T19:18:21.3118506+07:00 0HLKSLLB3IU1C:00000003 [INF] Executing ChallengeResult with authentication schemes ([]). (f3dca807)
+2019-02-27T19:18:21.3222076+07:00 0HLKSLLB3IU1C:00000003 [INF] AuthenticationScheme: "Identity.Application" was challenged. (d45f1f38)
+2019-02-27T19:18:21.3507160+07:00 0HLKSLLB3IU1C:00000003 [INF] Executed action "WebCoreApp.Controllers.HomeController.Index (WebCoreApp)" in 90.7226ms (afa2e885)
+2019-02-27T19:18:21.3595931+07:00 0HLKSLLB3IU1C:00000003 [INF] Request finished in 131.561ms 302  (791a596a)
+2019-02-27T19:18:21.3923072+07:00 0HLKSLLB3IU1C:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:49945/Account/Login?ReturnUrl=%2F   (ca22a1cb)
+2019-02-27T19:18:21.4170048+07:00 0HLKSLLB3IU1C:00000004 [INF] Executing action method "WebCoreApp.Controllers.AccountController.Login (WebCoreApp)" with arguments (["/"]) - ModelState is Valid (ba7f4ac2)
+2019-02-27T19:18:21.4418456+07:00 0HLKSLLB3IU1C:00000004 [INF] AuthenticationScheme: "Identity.External" signed out. (d3f50c8d)
+2019-02-27T19:18:21.4661522+07:00 0HLKSLLB3IU1C:00000004 [INF] Executing ViewResult, running view at path "/Views/Account/Login.cshtml". (9707eebe)
+2019-02-27T19:18:21.4745085+07:00 0HLKSLLB3IU1C:00000004 [INF] Executed action "WebCoreApp.Controllers.AccountController.Login (WebCoreApp)" in 75.2015ms (afa2e885)
+2019-02-27T19:18:21.4927350+07:00 0HLKSLLB3IU1C:00000004 [INF] Request finished in 108.8348ms 200 text/html; charset=utf-8 (791a596a)
+2019-02-27T19:18:22.0859928+07:00 0HLKSLLB3IU1C:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:49945/Home/About   (ca22a1cb)
+2019-02-27T19:18:22.1126231+07:00 0HLKSLLB3IU1C:00000005 [INF] Authorization failed for user: null. (a4ab1676)
+2019-02-27T19:18:22.1378535+07:00 0HLKSLLB3IU1C:00000005 [INF] Authorization failed for the request at filter '"Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter"'. (8b6446cb)
+2019-02-27T19:18:22.1420081+07:00 0HLKSLLB3IU1C:00000005 [INF] Executing ChallengeResult with authentication schemes ([]). (f3dca807)
+2019-02-27T19:18:22.1526307+07:00 0HLKSLLB3IU1C:00000005 [INF] AuthenticationScheme: "Identity.Application" was challenged. (d45f1f38)
+2019-02-27T19:18:22.1580634+07:00 0HLKSLLB3IU1C:00000005 [INF] Executed action "WebCoreApp.Controllers.HomeController.About (WebCoreApp)" in 65.6191ms (afa2e885)
+2019-02-27T19:18:22.1682872+07:00 0HLKSLLB3IU1C:00000005 [INF] Request finished in 76.5816ms 302  (791a596a)
+2019-02-27T19:18:22.2067852+07:00 0HLKSLLB3IU1C:00000006 [INF] Request starting HTTP/1.1 GET http://localhost:49945/Account/Login?ReturnUrl=%2FHome%2FAbout   (ca22a1cb)
+2019-02-27T19:18:22.2319381+07:00 0HLKSLLB3IU1C:00000006 [INF] Executing action method "WebCoreApp.Controllers.AccountController.Login (WebCoreApp)" with arguments (["/Home/About"]) - ModelState is Valid (ba7f4ac2)
+2019-02-27T19:18:22.2577951+07:00 0HLKSLLB3IU1C:00000006 [INF] AuthenticationScheme: "Identity.External" signed out. (d3f50c8d)
+2019-02-27T19:18:22.2828094+07:00 0HLKSLLB3IU1C:00000006 [INF] Executing ViewResult, running view at path "/Views/Account/Login.cshtml". (9707eebe)
+2019-02-27T19:18:22.2926943+07:00 0HLKSLLB3IU1C:00000006 [INF] Executed action "WebCoreApp.Controllers.AccountController.Login (WebCoreApp)" in 77.4649ms (afa2e885)
+2019-02-27T19:18:22.3106001+07:00 0HLKSLLB3IU1C:00000006 [INF] Request finished in 112.7785ms 200 text/html; charset=utf-8 (791a596a)
+2019-02-27T19:18:22.8208566+07:00 0HLKSLLB3IU1C:00000007 [INF] Request starting HTTP/1.1 GET http://localhost:49945/Home/Contact   (ca22a1cb)
+2019-02-27T19:18:22.8265143+07:00 0HLKSLLB3IU1C:00000007 [INF] Authorization failed for user: null. (a4ab1676)
+2019-02-27T19:18:22.8536062+07:00 0HLKSLLB3IU1C:00000007 [INF] Authorization failed for the request at filter '"Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter"'. (8b6446cb)
+2019-02-27T19:18:22.8809732+07:00 0HLKSLLB3IU1C:00000007 [INF] Executing ChallengeResult with authentication schemes ([]). (f3dca807)
+2019-02-27T19:18:22.9058944+07:00 0HLKSLLB3IU1C:00000007 [INF] AuthenticationScheme: "Identity.Application" was challenged. (d45f1f38)
+2019-02-27T19:18:22.9313026+07:00 0HLKSLLB3IU1C:00000007 [INF] Executed action "WebCoreApp.Controllers.HomeController.Contact (WebCoreApp)" in 83.7151ms (afa2e885)
+2019-02-27T19:18:22.9361507+07:00 0HLKSLLB3IU1C:00000007 [INF] Request finished in 140.7389ms 302  (791a596a)
+2019-02-27T19:18:22.9451361+07:00 0HLKSLLB3IU1C:00000008 [INF] Request starting HTTP/1.1 GET http://localhost:49945/Account/Login?ReturnUrl=%2FHome%2FContact   (ca22a1cb)
+2019-02-27T19:18:22.9519373+07:00 0HLKSLLB3IU1C:00000008 [INF] Executing action method "WebCoreApp.Controllers.AccountController.Login (WebCoreApp)" with arguments (["/Home/Contact"]) - ModelState is Valid (ba7f4ac2)
+2019-02-27T19:18:22.9584731+07:00 0HLKSLLB3IU1C:00000008 [INF] AuthenticationScheme: "Identity.External" signed out. (d3f50c8d)
+2019-02-27T19:18:22.9651661+07:00 0HLKSLLB3IU1C:00000008 [INF] Executing ViewResult, running view at path "/Views/Account/Login.cshtml". (9707eebe)
+2019-02-27T19:18:22.9989546+07:00 0HLKSLLB3IU1C:00000008 [INF] Executed action "WebCoreApp.Controllers.AccountController.Login (WebCoreApp)" in 20.6294ms (afa2e885)
+2019-02-27T19:18:23.0207026+07:00 0HLKSLLB3IU1C:00000008 [INF] Request finished in 62.3444ms 200 text/html; charset=utf-8 (791a596a)
+2019-02-27T19:18:23.7145348+07:00 0HLKSLLB3IU1C:00000009 [INF] Request starting HTTP/1.1 GET http://localhost:49945/   (ca22a1cb)
+2019-02-27T19:18:23.7416462+07:00 0HLKSLLB3IU1C:00000009 [INF] Authorization failed for user: null. (a4ab1676)
+2019-02-27T19:18:23.7871795+07:00 0HLKSLLB3IU1C:00000009 [INF] Authorization failed for the request at filter '"Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter"'. (8b6446cb)
+2019-02-27T19:18:23.8335236+07:00 0HLKSLLB3IU1C:00000009 [INF] Executing ChallengeResult with authentication schemes ([]). (f3dca807)
+2019-02-27T19:18:23.8385432+07:00 0HLKSLLB3IU1C:00000009 [INF] AuthenticationScheme: "Identity.Application" was challenged. (d45f1f38)
+2019-02-27T19:18:23.8430714+07:00 0HLKSLLB3IU1C:00000009 [INF] Executed action "WebCoreApp.Controllers.HomeController.Index (WebCoreApp)" in 121.7769ms (afa2e885)
+2019-02-27T19:18:23.8683777+07:00 0HLKSLLB3IU1C:00000009 [INF] Request finished in 156.6394ms 302  (791a596a)
+2019-02-27T19:18:23.8950969+07:00 0HLKSLLB3IU1C:0000000A [INF] Request starting HTTP/1.1 GET http://localhost:49945/Account/Login?ReturnUrl=%2F   (ca22a1cb)
+2019-02-27T19:18:23.9015184+07:00 0HLKSLLB3IU1C:0000000A [INF] Executing action method "WebCoreApp.Controllers.AccountController.Login (WebCoreApp)" with arguments (["/"]) - ModelState is Valid (ba7f4ac2)
+2019-02-27T19:18:23.9058669+07:00 0HLKSLLB3IU1C:0000000A [INF] AuthenticationScheme: "Identity.External" signed out. (d3f50c8d)
+2019-02-27T19:18:23.9100151+07:00 0HLKSLLB3IU1C:0000000A [INF] Executing ViewResult, running view at path "/Views/Account/Login.cshtml". (9707eebe)
+2019-02-27T19:18:23.9435411+07:00 0HLKSLLB3IU1C:0000000A [INF] Executed action "WebCoreApp.Controllers.AccountController.Login (WebCoreApp)" in 18.1601ms (afa2e885)
+2019-02-27T19:18:23.9510181+07:00 0HLKSLLB3IU1C:0000000A [INF] Request finished in 73.9039ms 200 text/html; charset=utf-8 (791a596a)
+2019-02-27T19:32:45.7561592+07:00  [INF] Entity Framework Core "2.0.3-rtm-10026" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=WebCoreApp.Data.EF " (9958f5bb)
+2019-02-27T19:32:50.2875055+07:00  [INF] Executed DbCommand ("446"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppRoles] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2019-02-27T19:32:50.5051315+07:00  [INF] Executed DbCommand ("72"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppUsers] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2019-02-27T19:32:50.7210046+07:00  [INF] Executed DbCommand ("191"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Functions] AS [f]" (0723d8ff)
+2019-02-27T19:32:50.9950796+07:00  [INF] Executed DbCommand ("141"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Footers] AS [x]
+WHERE [x].[Id] = 'DefaultFooterId'" (0723d8ff)
+2019-02-27T19:32:51.0422845+07:00  [INF] Executed DbCommand ("18"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Colors] AS [c]" (0723d8ff)
+2019-02-27T19:32:51.2164092+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [AdvertistmentPages] AS [a]" (0723d8ff)
+2019-02-27T19:32:51.3022026+07:00  [INF] Executed DbCommand ("26"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Slides] AS [s]" (0723d8ff)
+2019-02-27T19:32:51.3780734+07:00  [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Sizes] AS [s]" (0723d8ff)
+2019-02-27T19:32:51.4325478+07:00  [INF] Executed DbCommand ("33"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [ProductCategories] AS [p]" (0723d8ff)
+2019-02-27T19:32:51.6000412+07:00  [INF] Executed DbCommand ("58"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeTitle')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2019-02-27T19:32:51.6378446+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaKeyword')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2019-02-27T19:32:51.6687845+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaDescription')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2019-02-27T19:33:01.8580573+07:00 0HLKSLUOFJVB2:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:49945/   (ca22a1cb)
+2019-02-27T19:33:04.0161796+07:00 0HLKSLUOFJVB2:00000001 [INF] Authorization failed for user: null. (a4ab1676)
+2019-02-27T19:33:04.0509246+07:00 0HLKSLUOFJVB2:00000001 [INF] Authorization failed for the request at filter '"Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter"'. (8b6446cb)
+2019-02-27T19:33:04.0830924+07:00 0HLKSLUOFJVB2:00000001 [INF] Executing ChallengeResult with authentication schemes ([]). (f3dca807)
+2019-02-27T19:33:04.1412185+07:00 0HLKSLUOFJVB2:00000001 [INF] AuthenticationScheme: "Identity.Application" was challenged. (d45f1f38)
+2019-02-27T19:33:04.1645840+07:00 0HLKSLUOFJVB2:00000001 [INF] Executed action "WebCoreApp.Controllers.HomeController.Index (WebCoreApp)" in 149.3773ms (afa2e885)
+2019-02-27T19:33:04.1839836+07:00 0HLKSLUOFJVB2:00000001 [INF] Request finished in 2712.9903ms 302  (791a596a)
+2019-02-27T19:33:04.2449866+07:00 0HLKSLUOFJVB2:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:49945/Account/Login?ReturnUrl=%2F   (ca22a1cb)
+2019-02-27T19:33:04.7436455+07:00 0HLKSLUOFJVB2:00000002 [INF] Executing action method "WebCoreApp.Controllers.AccountController.Login (WebCoreApp)" with arguments (["/"]) - ModelState is Valid (ba7f4ac2)
+2019-02-27T19:33:04.8404508+07:00 0HLKSLUOFJVB2:00000002 [INF] AuthenticationScheme: "Identity.External" signed out. (d3f50c8d)
+2019-02-27T19:33:13.6725836+07:00 0HLKSLUOFJVB2:00000002 [INF] Executing ViewResult, running view at path "/Views/Account/Login.cshtml". (9707eebe)
+2019-02-27T19:33:15.2395588+07:00 0HLKSLUOFJVB2:00000002 [INF] Executed action "WebCoreApp.Controllers.AccountController.Login (WebCoreApp)" in 10873.2853ms (afa2e885)
+2019-02-27T19:33:15.3004836+07:00 0HLKSLUOFJVB2:00000002 [INF] Request finished in 11038.3848ms 200 text/html; charset=utf-8 (791a596a)
+2019-02-27T19:35:32.1718250+07:00  [INF] Entity Framework Core "2.0.3-rtm-10026" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=WebCoreApp.Data.EF " (9958f5bb)
+2019-02-27T19:35:34.1610134+07:00  [INF] Executed DbCommand ("117"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppRoles] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2019-02-27T19:35:34.2376974+07:00  [INF] Executed DbCommand ("49"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppUsers] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2019-02-27T19:35:34.3335588+07:00  [INF] Executed DbCommand ("70"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Functions] AS [f]" (0723d8ff)
+2019-02-27T19:35:34.3889799+07:00  [INF] Executed DbCommand ("15"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Footers] AS [x]
+WHERE [x].[Id] = 'DefaultFooterId'" (0723d8ff)
+2019-02-27T19:35:34.4272579+07:00  [INF] Executed DbCommand ("4"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Colors] AS [c]" (0723d8ff)
+2019-02-27T19:35:34.4877571+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [AdvertistmentPages] AS [a]" (0723d8ff)
+2019-02-27T19:35:34.6190518+07:00  [INF] Executed DbCommand ("59"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Slides] AS [s]" (0723d8ff)
+2019-02-27T19:35:34.6442692+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Sizes] AS [s]" (0723d8ff)
+2019-02-27T19:35:34.6852472+07:00  [INF] Executed DbCommand ("14"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [ProductCategories] AS [p]" (0723d8ff)
+2019-02-27T19:35:34.7788416+07:00  [INF] Executed DbCommand ("15"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeTitle')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2019-02-27T19:35:34.8194095+07:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaKeyword')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2019-02-27T19:35:34.8748020+07:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaDescription')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2019-02-27T19:35:37.0709865+07:00 0HLKSM094E1DH:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:49945/   (ca22a1cb)
+2019-02-27T19:35:37.6274956+07:00 0HLKSM094E1DH:00000001 [INF] Authorization failed for user: null. (a4ab1676)
+2019-02-27T19:35:37.6541736+07:00 0HLKSM094E1DH:00000001 [INF] Authorization failed for the request at filter '"Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter"'. (8b6446cb)
+2019-02-27T19:35:37.6921856+07:00 0HLKSM094E1DH:00000001 [INF] Executing ChallengeResult with authentication schemes ([]). (f3dca807)
+2019-02-27T19:35:37.7340867+07:00 0HLKSM094E1DH:00000001 [INF] AuthenticationScheme: "Identity.Application" was challenged. (d45f1f38)
+2019-02-27T19:35:37.7490835+07:00 0HLKSM094E1DH:00000001 [INF] Executed action "WebCoreApp.Controllers.HomeController.Index (WebCoreApp)" in 133.2398ms (afa2e885)
+2019-02-27T19:35:37.7801079+07:00 0HLKSM094E1DH:00000001 [INF] Request finished in 754.8212ms 302  (791a596a)
+2019-02-27T19:35:37.8365113+07:00 0HLKSM094E1DH:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:49945/Account/Login?ReturnUrl=%2F   (ca22a1cb)
+2019-02-27T19:35:37.9643935+07:00 0HLKSM094E1DH:00000002 [INF] Executing action method "WebCoreApp.Controllers.AccountController.Login (WebCoreApp)" with arguments (["/"]) - ModelState is Valid (ba7f4ac2)
+2019-02-27T19:35:38.0111273+07:00 0HLKSM094E1DH:00000002 [INF] AuthenticationScheme: "Identity.External" signed out. (d3f50c8d)
+2019-02-27T19:35:44.6583153+07:00 0HLKSM094E1DH:00000002 [INF] Executing ViewResult, running view at path "/Views/Account/Login.cshtml". (9707eebe)
+2019-02-27T19:35:45.6339224+07:00 0HLKSM094E1DH:00000002 [INF] Executed action "WebCoreApp.Controllers.AccountController.Login (WebCoreApp)" in 7734.9117ms (afa2e885)
+2019-02-27T19:35:45.6690811+07:00 0HLKSM094E1DH:00000002 [INF] Request finished in 7833.2904ms 200 text/html; charset=utf-8 (791a596a)
+2019-02-27T19:36:43.2872926+07:00  [INF] Entity Framework Core "2.0.3-rtm-10026" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=WebCoreApp.Data.EF " (9958f5bb)
+2019-02-27T19:36:45.2108907+07:00  [INF] Executed DbCommand ("117"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppRoles] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2019-02-27T19:36:45.2582581+07:00  [INF] Executed DbCommand ("14"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppUsers] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2019-02-27T19:36:45.3984886+07:00  [INF] Executed DbCommand ("97"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Functions] AS [f]" (0723d8ff)
+2019-02-27T19:36:45.4516018+07:00  [INF] Executed DbCommand ("21"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Footers] AS [x]
+WHERE [x].[Id] = 'DefaultFooterId'" (0723d8ff)
+2019-02-27T19:36:45.4858398+07:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Colors] AS [c]" (0723d8ff)
+2019-02-27T19:36:45.5553533+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [AdvertistmentPages] AS [a]" (0723d8ff)
+2019-02-27T19:36:45.6326896+07:00  [INF] Executed DbCommand ("33"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Slides] AS [s]" (0723d8ff)
+2019-02-27T19:36:45.6563390+07:00  [INF] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Sizes] AS [s]" (0723d8ff)
+2019-02-27T19:36:45.7171643+07:00  [INF] Executed DbCommand ("32"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [ProductCategories] AS [p]" (0723d8ff)
+2019-02-27T19:36:45.8140903+07:00  [INF] Executed DbCommand ("20"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeTitle')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2019-02-27T19:36:45.8350212+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaKeyword')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2019-02-27T19:36:45.8454040+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaDescription')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2019-02-27T19:36:48.2080913+07:00 0HLKSM0U8M9KG:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:49945/   (ca22a1cb)
+2019-02-27T19:36:48.4925999+07:00 0HLKSM0U8M9KG:00000001 [INF] Authorization failed for user: null. (a4ab1676)
+2019-02-27T19:36:48.5201682+07:00 0HLKSM0U8M9KG:00000001 [INF] Authorization failed for the request at filter '"Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter"'. (8b6446cb)
+2019-02-27T19:36:48.5351851+07:00 0HLKSM0U8M9KG:00000001 [INF] Executing ChallengeResult with authentication schemes ([]). (f3dca807)
+2019-02-27T19:36:48.5738682+07:00 0HLKSM0U8M9KG:00000001 [INF] AuthenticationScheme: "Identity.Application" was challenged. (d45f1f38)
+2019-02-27T19:36:48.5893421+07:00 0HLKSM0U8M9KG:00000001 [INF] Executed action "WebCoreApp.Controllers.HomeController.Index (WebCoreApp)" in 116.8939ms (afa2e885)
+2019-02-27T19:36:48.6126264+07:00 0HLKSM0U8M9KG:00000001 [INF] Request finished in 453.1581ms 302  (791a596a)
+2019-02-27T19:36:48.6454996+07:00 0HLKSM0U8M9KG:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:49945/Account/Login?ReturnUrl=%2F   (ca22a1cb)
+2019-02-27T19:36:48.8599967+07:00 0HLKSM0U8M9KG:00000002 [INF] Executing action method "WebCoreApp.Controllers.AccountController.Login (WebCoreApp)" with arguments (["/"]) - ModelState is Valid (ba7f4ac2)
+2019-02-27T19:36:48.9025011+07:00 0HLKSM0U8M9KG:00000002 [INF] AuthenticationScheme: "Identity.External" signed out. (d3f50c8d)
+2019-02-27T19:36:54.3303693+07:00 0HLKSM0U8M9KG:00000002 [INF] Executing ViewResult, running view at path "/Views/Account/Login.cshtml". (9707eebe)
+2019-02-27T19:36:55.9716895+07:00 0HLKSM0U8M9KG:00000002 [INF] Executed action "WebCoreApp.Controllers.AccountController.Login (WebCoreApp)" in 7205.7759ms (afa2e885)
+2019-02-27T19:36:55.9947686+07:00 0HLKSM0U8M9KG:00000002 [INF] Request finished in 7340.5443ms 200 text/html; charset=utf-8 (791a596a)
+2019-02-27T19:43:02.6398869+07:00  [INF] Entity Framework Core "2.0.3-rtm-10026" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=WebCoreApp.Data.EF " (9958f5bb)
+2019-02-27T19:43:06.6250386+07:00  [INF] Executed DbCommand ("173"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppRoles] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2019-02-27T19:43:06.6812817+07:00  [INF] Executed DbCommand ("19"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppUsers] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2019-02-27T19:43:06.8441956+07:00  [INF] Executed DbCommand ("127"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Functions] AS [f]" (0723d8ff)
+2019-02-27T19:43:07.0217291+07:00  [INF] Executed DbCommand ("134"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Footers] AS [x]
+WHERE [x].[Id] = 'DefaultFooterId'" (0723d8ff)
+2019-02-27T19:43:07.0516990+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Colors] AS [c]" (0723d8ff)
+2019-02-27T19:43:07.1271110+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [AdvertistmentPages] AS [a]" (0723d8ff)
+2019-02-27T19:43:07.1978738+07:00  [INF] Executed DbCommand ("42"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Slides] AS [s]" (0723d8ff)
+2019-02-27T19:43:07.2319279+07:00  [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Sizes] AS [s]" (0723d8ff)
+2019-02-27T19:43:07.3026099+07:00  [INF] Executed DbCommand ("32"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [ProductCategories] AS [p]" (0723d8ff)
+2019-02-27T19:43:07.4114567+07:00  [INF] Executed DbCommand ("33"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeTitle')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2019-02-27T19:43:07.4281451+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaKeyword')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2019-02-27T19:43:07.4393431+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaDescription')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2019-02-27T19:43:11.8571067+07:00 0HLKSM4FU05JC:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:49945/   (ca22a1cb)
+2019-02-27T19:43:14.2417923+07:00 0HLKSM4FU05JC:00000001 [INF] Authorization failed for user: null. (a4ab1676)
+2019-02-27T19:43:14.2705101+07:00 0HLKSM4FU05JC:00000001 [INF] Authorization failed for the request at filter '"Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter"'. (8b6446cb)
+2019-02-27T19:43:14.3030239+07:00 0HLKSM4FU05JC:00000001 [INF] Executing ChallengeResult with authentication schemes ([]). (f3dca807)
+2019-02-27T19:43:14.3465865+07:00 0HLKSM4FU05JC:00000001 [INF] AuthenticationScheme: "Identity.Application" was challenged. (d45f1f38)
+2019-02-27T19:43:14.3910536+07:00 0HLKSM4FU05JC:00000001 [INF] Executed action "WebCoreApp.Controllers.HomeController.Index (WebCoreApp)" in 119.0134ms (afa2e885)
+2019-02-27T19:43:14.4063617+07:00 0HLKSM4FU05JC:00000001 [INF] Request finished in 3555.1476ms 302  (791a596a)
+2019-02-27T19:43:14.4481356+07:00 0HLKSM4FU05JC:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:49945/Account/Login?ReturnUrl=%2F   (ca22a1cb)
+2019-02-27T19:43:14.5791469+07:00 0HLKSM4FU05JC:00000002 [INF] Executing action method "WebCoreApp.Controllers.AccountController.Login (WebCoreApp)" with arguments (["/"]) - ModelState is Valid (ba7f4ac2)
+2019-02-27T19:43:14.6037306+07:00 0HLKSM4FU05JC:00000002 [INF] AuthenticationScheme: "Identity.External" signed out. (d3f50c8d)
+2019-02-27T19:43:22.9777630+07:00 0HLKSM4FU05JC:00000002 [INF] Executing ViewResult, running view at path "/Views/Account/Login.cshtml". (9707eebe)
+2019-02-27T19:43:23.9691937+07:00 0HLKSM4FU05JC:00000002 [INF] Executed action "WebCoreApp.Controllers.AccountController.Login (WebCoreApp)" in 9434.4987ms (afa2e885)
+2019-02-27T19:43:24.0038401+07:00 0HLKSM4FU05JC:00000002 [INF] Request finished in 9550.0823ms 200 text/html; charset=utf-8 (791a596a)
+2019-02-27T19:44:11.7479625+07:00  [INF] Entity Framework Core "2.0.3-rtm-10026" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=WebCoreApp.Data.EF " (9958f5bb)
+2019-02-27T19:44:12.8460137+07:00  [INF] Executed DbCommand ("180"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppRoles] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2019-02-27T19:44:12.9009358+07:00  [INF] Executed DbCommand ("16"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppUsers] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2019-02-27T19:44:12.9944453+07:00  [INF] Executed DbCommand ("55"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Functions] AS [f]" (0723d8ff)
+2019-02-27T19:44:13.0517403+07:00  [INF] Executed DbCommand ("18"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Footers] AS [x]
+WHERE [x].[Id] = 'DefaultFooterId'" (0723d8ff)
+2019-02-27T19:44:13.0816052+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Colors] AS [c]" (0723d8ff)
+2019-02-27T19:44:13.1605772+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [AdvertistmentPages] AS [a]" (0723d8ff)
+2019-02-27T19:44:13.2434521+07:00  [INF] Executed DbCommand ("28"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Slides] AS [s]" (0723d8ff)
+2019-02-27T19:44:13.2756534+07:00  [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Sizes] AS [s]" (0723d8ff)
+2019-02-27T19:44:13.3353257+07:00  [INF] Executed DbCommand ("39"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [ProductCategories] AS [p]" (0723d8ff)
+2019-02-27T19:44:13.5149329+07:00  [INF] Executed DbCommand ("71"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeTitle')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2019-02-27T19:44:13.5304152+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaKeyword')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2019-02-27T19:44:13.5408981+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaDescription')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2019-02-27T19:44:15.1398035+07:00 0HLKSM53MM5MU:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:49945/   (ca22a1cb)
+2019-02-27T19:44:15.9359049+07:00 0HLKSM53MM5MU:00000001 [INF] Authorization failed for user: null. (a4ab1676)
+2019-02-27T19:44:15.9594297+07:00 0HLKSM53MM5MU:00000001 [INF] Authorization failed for the request at filter '"Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter"'. (8b6446cb)
+2019-02-27T19:44:15.9741120+07:00 0HLKSM53MM5MU:00000001 [INF] Executing ChallengeResult with authentication schemes ([]). (f3dca807)
+2019-02-27T19:44:15.9921403+07:00 0HLKSM53MM5MU:00000001 [INF] AuthenticationScheme: "Identity.Application" was challenged. (d45f1f38)
+2019-02-27T19:44:16.0037089+07:00 0HLKSM53MM5MU:00000001 [INF] Executed action "WebCoreApp.Controllers.HomeController.Index (WebCoreApp)" in 76.5383ms (afa2e885)
+2019-02-27T19:44:16.0215534+07:00 0HLKSM53MM5MU:00000001 [INF] Request finished in 916.111ms 302  (791a596a)
+2019-02-27T19:44:16.0372153+07:00 0HLKSM53MM5MU:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:49945/Account/Login?ReturnUrl=%2F   (ca22a1cb)
+2019-02-27T19:44:16.1316474+07:00 0HLKSM53MM5MU:00000002 [INF] Executing action method "WebCoreApp.Controllers.AccountController.Login (WebCoreApp)" with arguments (["/"]) - ModelState is Valid (ba7f4ac2)
+2019-02-27T19:44:16.1854011+07:00 0HLKSM53MM5MU:00000002 [INF] AuthenticationScheme: "Identity.External" signed out. (d3f50c8d)
+2019-02-27T19:44:19.7214401+07:00 0HLKSM53MM5MU:00000002 [INF] Executing ViewResult, running view at path "/Views/Account/Login.cshtml". (9707eebe)
+2019-02-27T19:44:20.5214566+07:00 0HLKSM53MM5MU:00000002 [INF] Executed action "WebCoreApp.Controllers.AccountController.Login (WebCoreApp)" in 4415.2497ms (afa2e885)
+2019-02-27T19:44:20.5295132+07:00 0HLKSM53MM5MU:00000002 [INF] Request finished in 4494.2303ms 200 text/html; charset=utf-8 (791a596a)
+2019-02-27T19:44:26.7576757+07:00 0HLKSM53MM5N0:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:49945/admin   (ca22a1cb)
+2019-02-27T19:44:26.7770679+07:00 0HLKSM53MM5N0:00000001 [INF] Executing action method "WebCoreApp.Areas.Admin.Controllers.LoginController.Index (WebCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2019-02-27T19:44:27.1592803+07:00 0HLKSM53MM5N0:00000001 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Login/Index.cshtml". (9707eebe)
+2019-02-27T19:44:27.2427017+07:00 0HLKSM53MM5N0:00000001 [INF] Executed action "WebCoreApp.Areas.Admin.Controllers.LoginController.Index (WebCoreApp)" in 428.1171ms (afa2e885)
+2019-02-27T19:44:27.2736837+07:00 0HLKSM53MM5N1:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:49945/lib/jquery-validation/localization/messages_vi.js   (ca22a1cb)
+2019-02-27T19:44:27.3047676+07:00 0HLKSM53MM5N0:00000001 [INF] Request finished in 493.4284ms 200 text/html; charset=utf-8 (791a596a)
+2019-02-27T19:44:27.4741580+07:00 0HLKSM53MM5N1:00000001 [INF] The file "/lib/jquery-validation/localization/messages_vi.js" was not modified (f1f8d725)
+2019-02-27T19:44:27.4927794+07:00 0HLKSM53MM5N1:00000001 [INF] Request finished in 248.9404ms 304 application/javascript (791a596a)
+2019-02-27T19:44:27.6189665+07:00 0HLKSM53MM5N2:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:49945/app/controllers/login/index.js   (ca22a1cb)
+2019-02-27T19:44:27.6256835+07:00 0HLKSM53MM5N2:00000001 [INF] The file "/app/controllers/login/index.js" was not modified (f1f8d725)
+2019-02-27T19:44:27.6522599+07:00 0HLKSM53MM5N2:00000001 [INF] Request finished in 33.3191ms 304 application/javascript (791a596a)
+2019-02-27T19:44:29.7014633+07:00 0HLKSM53MM5N2:00000002 [INF] Request starting HTTP/1.1 POST http://localhost:49945/admin/login/authen application/x-www-form-urlencoded; charset=UTF-8 33 (ca22a1cb)
+2019-02-27T19:44:29.9224927+07:00 0HLKSM53MM5N2:00000002 [INF] Executing action method "WebCoreApp.Areas.Admin.Controllers.LoginController.Authen (WebCoreApp)" with arguments (["WebCoreApp.Models.AccountViewModels.LoginViewModel"]) - ModelState is Valid (ba7f4ac2)
+2019-02-27T19:44:30.4503250+07:00 0HLKSM53MM5N2:00000002 [INF] Entity Framework Core "2.0.3-rtm-10026" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=WebCoreApp.Data.EF " (9958f5bb)
+2019-02-27T19:44:32.1396635+07:00 0HLKSM53MM5N2:00000002 [INF] Executed DbCommand ("263"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[Avatar], [u].[Balance], [u].[BirthDay], [u].[ConcurrencyStamp], [u].[DateCreated], [u].[DateModified], [u].[Email], [u].[EmailConfirmed], [u].[FullName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[Status], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AppUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2019-02-27T19:50:52.4091185+07:00  [INF] Entity Framework Core "2.0.3-rtm-10026" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=WebCoreApp.Data.EF " (9958f5bb)
+2019-02-27T19:50:53.4816578+07:00  [INF] Executed DbCommand ("60"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppRoles] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2019-02-27T19:50:53.5371636+07:00  [INF] Executed DbCommand ("13"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppUsers] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2019-02-27T19:50:53.6402635+07:00  [INF] Executed DbCommand ("61"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Functions] AS [f]" (0723d8ff)
+2019-02-27T19:50:53.6840645+07:00  [INF] Executed DbCommand ("22"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Footers] AS [x]
+WHERE [x].[Id] = 'DefaultFooterId'" (0723d8ff)
+2019-02-27T19:50:53.7123035+07:00  [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Colors] AS [c]" (0723d8ff)
+2019-02-27T19:50:53.7869211+07:00  [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [AdvertistmentPages] AS [a]" (0723d8ff)
+2019-02-27T19:50:53.8650124+07:00  [INF] Executed DbCommand ("27"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Slides] AS [s]" (0723d8ff)
+2019-02-27T19:50:53.9762012+07:00  [INF] Executed DbCommand ("6"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Sizes] AS [s]" (0723d8ff)
+2019-02-27T19:50:54.0123537+07:00  [INF] Executed DbCommand ("12"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [ProductCategories] AS [p]" (0723d8ff)
+2019-02-27T19:50:54.0881071+07:00  [INF] Executed DbCommand ("13"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeTitle')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2019-02-27T19:50:54.1048694+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaKeyword')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2019-02-27T19:50:54.1146334+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaDescription')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2019-02-27T19:50:55.5133528+07:00 0HLKSM8QVU7ML:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:49945/   (ca22a1cb)
+2019-02-27T19:50:55.7802735+07:00 0HLKSM8QVU7ML:00000001 [INF] Authorization failed for user: null. (a4ab1676)
+2019-02-27T19:50:55.7945309+07:00 0HLKSM8QVU7ML:00000001 [INF] Authorization failed for the request at filter '"Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter"'. (8b6446cb)
+2019-02-27T19:50:55.8119975+07:00 0HLKSM8QVU7ML:00000001 [INF] Executing ChallengeResult with authentication schemes ([]). (f3dca807)
+2019-02-27T19:50:55.8413637+07:00 0HLKSM8QVU7ML:00000001 [INF] AuthenticationScheme: "Identity.Application" was challenged. (d45f1f38)
+2019-02-27T19:50:55.8506439+07:00 0HLKSM8QVU7ML:00000001 [INF] Executed action "WebCoreApp.Controllers.HomeController.Index (WebCoreApp)" in 84.5039ms (afa2e885)
+2019-02-27T19:50:55.8654665+07:00 0HLKSM8QVU7ML:00000001 [INF] Request finished in 395.4898ms 302  (791a596a)
+2019-02-27T19:50:55.9048993+07:00 0HLKSM8QVU7ML:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:49945/Account/Login?ReturnUrl=%2F   (ca22a1cb)
+2019-02-27T19:50:55.9872395+07:00 0HLKSM8QVU7ML:00000002 [INF] Executing action method "WebCoreApp.Controllers.AccountController.Login (WebCoreApp)" with arguments (["/"]) - ModelState is Valid (ba7f4ac2)
+2019-02-27T19:50:56.0162021+07:00 0HLKSM8QVU7ML:00000002 [INF] AuthenticationScheme: "Identity.External" signed out. (d3f50c8d)
+2019-02-27T19:50:59.5029108+07:00 0HLKSM8QVU7ML:00000002 [INF] Executing ViewResult, running view at path "/Views/Account/Login.cshtml". (9707eebe)
+2019-02-27T19:51:00.3148598+07:00 0HLKSM8QVU7ML:00000002 [INF] Executed action "WebCoreApp.Controllers.AccountController.Login (WebCoreApp)" in 4325.9033ms (afa2e885)
+2019-02-27T19:51:00.3292342+07:00 0HLKSM8QVU7ML:00000002 [INF] Request finished in 4443.1724ms 200 text/html; charset=utf-8 (791a596a)
+2019-02-27T19:51:07.8317969+07:00 0HLKSM8QVU7MM:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:49945/admin/login   (ca22a1cb)
+2019-02-27T19:51:07.8480374+07:00 0HLKSM8QVU7MM:00000001 [INF] Executing action method "WebCoreApp.Areas.Admin.Controllers.LoginController.Index (WebCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2019-02-27T19:51:08.1283777+07:00 0HLKSM8QVU7MM:00000001 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Login/Index.cshtml". (9707eebe)
+2019-02-27T19:51:08.2292631+07:00 0HLKSM8QVU7MM:00000001 [INF] Executed action "WebCoreApp.Areas.Admin.Controllers.LoginController.Index (WebCoreApp)" in 322.2213ms (afa2e885)
+2019-02-27T19:51:08.2427120+07:00 0HLKSM8QVU7MM:00000001 [INF] Request finished in 405.5482ms 200 text/html; charset=utf-8 (791a596a)
+2019-02-27T19:51:11.8398820+07:00 0HLKSM8QVU7MM:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:49945/admin   (ca22a1cb)
+2019-02-27T19:51:11.8479594+07:00 0HLKSM8QVU7MM:00000002 [INF] Executing action method "WebCoreApp.Areas.Admin.Controllers.LoginController.Index (WebCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2019-02-27T19:51:11.8651812+07:00 0HLKSM8QVU7MM:00000002 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Login/Index.cshtml". (9707eebe)
+2019-02-27T19:51:11.8894614+07:00 0HLKSM8QVU7MM:00000002 [INF] Executed action "WebCoreApp.Areas.Admin.Controllers.LoginController.Index (WebCoreApp)" in 34.933ms (afa2e885)
+2019-02-27T19:51:11.9137451+07:00 0HLKSM8QVU7MM:00000002 [INF] Request finished in 64.6018ms 200 text/html; charset=utf-8 (791a596a)
+2019-02-27T19:51:15.3681956+07:00 0HLKSM8QVU7MO:00000001 [INF] Request starting HTTP/1.1 POST http://localhost:49945/admin/login/authen application/x-www-form-urlencoded; charset=UTF-8 33 (ca22a1cb)
+2019-02-27T19:51:15.4451468+07:00 0HLKSM8QVU7MO:00000001 [INF] Executing action method "WebCoreApp.Areas.Admin.Controllers.LoginController.Authen (WebCoreApp)" with arguments (["WebCoreApp.Models.AccountViewModels.LoginViewModel"]) - ModelState is Valid (ba7f4ac2)
+2019-02-27T19:51:15.4745794+07:00 0HLKSM8QVU7MO:00000001 [INF] Entity Framework Core "2.0.3-rtm-10026" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=WebCoreApp.Data.EF " (9958f5bb)
+2019-02-27T19:51:15.5832055+07:00 0HLKSM8QVU7MO:00000001 [INF] Executed DbCommand ("62"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[Avatar], [u].[Balance], [u].[BirthDay], [u].[ConcurrencyStamp], [u].[DateCreated], [u].[DateModified], [u].[Email], [u].[EmailConfirmed], [u].[FullName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[Status], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AppUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2019-02-27T19:51:16.2039562+07:00 0HLKSM8QVU7MO:00000001 [INF] Executed DbCommand ("204"ms) [Parameters=["@__user_Id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [uc].[Id], [uc].[ClaimType], [uc].[ClaimValue], [uc].[UserId]
+FROM [AppUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0" (0723d8ff)
+2019-02-27T19:51:16.5842711+07:00 0HLKSM8QVU7MO:00000001 [INF] Executed DbCommand ("284"ms) [Parameters=["@__userId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2019-02-27T19:51:16.6879380+07:00 0HLKSM8QVU7MO:00000001 [INF] Executed DbCommand ("58"ms) [Parameters=["@__normalizedName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Description], [r].[Name], [r].[NormalizedName]
+FROM [AppRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0" (0723d8ff)
+2019-02-27T19:51:16.7360826+07:00 0HLKSM8QVU7MO:00000001 [INF] Executed DbCommand ("20"ms) [Parameters=["@__role_Id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [rc].[ClaimType], [rc].[ClaimValue]
+FROM [AppRoleClaims] AS [rc]
+WHERE [rc].[RoleId] = @__role_Id_0" (0723d8ff)
+2019-02-27T19:51:16.7465567+07:00 0HLKSM8QVU7MO:00000001 [INF] Executed DbCommand ("2"ms) [Parameters=["@__userId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2019-02-27T19:51:16.7597875+07:00 0HLKSM8QVU7MO:00000001 [INF] AuthenticationScheme: "Identity.Application" signed in. (c66dd7e7)
+2019-02-27T19:51:16.7692373+07:00 0HLKSM8QVU7MO:00000001 [INF] User logged in. (fdce0db4)
+2019-02-27T19:51:16.7818547+07:00 0HLKSM8QVU7MO:00000001 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2019-02-27T19:51:16.9137021+07:00 0HLKSM8QVU7MO:00000001 [INF] Executed action "WebCoreApp.Areas.Admin.Controllers.LoginController.Authen (WebCoreApp)" in 1506.4287ms (afa2e885)
+2019-02-27T19:51:16.9228753+07:00 0HLKSM8QVU7MO:00000001 [INF] Request finished in 1578.1231ms 200 application/json; charset=utf-8 (791a596a)
+2019-02-27T19:51:16.9744237+07:00 0HLKSM8QVU7MO:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:49945/Admin/Home/Index   (ca22a1cb)
+2019-02-27T19:51:16.9862114+07:00 0HLKSM8QVU7MO:00000002 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2019-02-27T19:51:16.9943889+07:00 0HLKSM8QVU7MO:00000002 [INF] Executing action method "WebCoreApp.Areas.Admin.Controllers.HomeController.Index (WebCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2019-02-27T19:51:17.4613351+07:00 0HLKSM8QVU7MO:00000002 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Home/Index.cshtml". (9707eebe)
+2019-02-27T19:51:17.7268320+07:00 0HLKSM8QVU7MO:00000002 [INF] Executed action "WebCoreApp.Areas.Admin.Controllers.HomeController.Index (WebCoreApp)" in 715.4677ms (afa2e885)
+2019-02-27T19:51:17.7561969+07:00 0HLKSM8QVU7MO:00000002 [INF] Request finished in 779.4413ms 200 text/html; charset=utf-8 (791a596a)
+2019-02-27T19:53:07.3495848+07:00  [INF] Entity Framework Core "2.0.3-rtm-10026" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=TeduCoreApp.Data.EF " (9958f5bb)
+2019-02-27T19:53:08.4061682+07:00  [INF] Executed DbCommand ("61"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppRoles] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2019-02-27T19:53:08.4544436+07:00  [INF] Executed DbCommand ("26"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppUsers] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2019-02-27T19:53:08.5571295+07:00  [INF] Executed DbCommand ("60"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Functions] AS [f]" (0723d8ff)
+2019-02-27T19:53:08.6083975+07:00  [INF] Executed DbCommand ("12"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Footers] AS [x]
+WHERE [x].[Id] = 'DefaultFooterId'" (0723d8ff)
+2019-02-27T19:53:08.6151321+07:00  [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Colors] AS [c]" (0723d8ff)
+2019-02-27T19:53:08.6742202+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [AdvertistmentPages] AS [a]" (0723d8ff)
+2019-02-27T19:53:08.7490151+07:00  [INF] Executed DbCommand ("11"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Slides] AS [s]" (0723d8ff)
+2019-02-27T19:53:08.7879688+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Sizes] AS [s]" (0723d8ff)
+2019-02-27T19:53:08.8369296+07:00  [INF] Executed DbCommand ("12"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [ProductCategories] AS [p]" (0723d8ff)
+2019-02-27T19:53:08.9240429+07:00  [INF] Executed DbCommand ("23"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeTitle')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2019-02-27T19:53:09.0076483+07:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaKeyword')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2019-02-27T19:53:09.0812955+07:00  [INF] Executed DbCommand ("26"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaDescription')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2019-02-27T19:53:10.6320510+07:00 0HLKSMA39QP5M:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:49945/   (ca22a1cb)
+2019-02-27T19:53:10.7107766+07:00 0HLKSMA39QP5M:00000001 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2019-02-27T19:53:47.4322390+07:00  [INF] Entity Framework Core "2.0.3-rtm-10026" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=TeduCoreApp.Data.EF " (9958f5bb)
+2019-02-27T19:53:48.4070226+07:00  [INF] Executed DbCommand ("62"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppRoles] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2019-02-27T19:53:48.4612600+07:00  [INF] Executed DbCommand ("12"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppUsers] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2019-02-27T19:53:48.5429680+07:00  [INF] Executed DbCommand ("43"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Functions] AS [f]" (0723d8ff)
+2019-02-27T19:53:48.6056965+07:00  [INF] Executed DbCommand ("12"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Footers] AS [x]
+WHERE [x].[Id] = 'DefaultFooterId'" (0723d8ff)
+2019-02-27T19:53:48.6125100+07:00  [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Colors] AS [c]" (0723d8ff)
+2019-02-27T19:53:48.6515814+07:00  [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [AdvertistmentPages] AS [a]" (0723d8ff)
+2019-02-27T19:53:48.7166686+07:00  [INF] Executed DbCommand ("11"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Slides] AS [s]" (0723d8ff)
+2019-02-27T19:53:48.7544602+07:00  [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Sizes] AS [s]" (0723d8ff)
+2019-02-27T19:53:48.8034200+07:00  [INF] Executed DbCommand ("11"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [ProductCategories] AS [p]" (0723d8ff)
+2019-02-27T19:53:48.8590831+07:00  [INF] Executed DbCommand ("12"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeTitle')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2019-02-27T19:53:48.8715100+07:00  [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaKeyword')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2019-02-27T19:53:48.8990833+07:00  [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaDescription')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2019-02-27T19:53:50.4120132+07:00 0HLKSMAF4SNOV:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:49945/   (ca22a1cb)
+2019-02-27T19:53:50.4734979+07:00 0HLKSMAF4SNOV:00000001 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2019-02-27T19:53:50.7679877+07:00 0HLKSMAF4SNOV:00000001 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2019-02-27T19:53:50.7877357+07:00 0HLKSMAF4SNOV:00000001 [INF] Executing action method "WebCoreApp.Controllers.HomeController.Index (WebCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2019-02-27T19:53:54.8615620+07:00 0HLKSMAF4SNOV:00000001 [INF] Executing ViewResult, running view at path "/Views/Home/Index.cshtml". (9707eebe)
+2019-02-27T19:53:55.6533407+07:00 0HLKSMAF4SNP1:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:49945/images/banner1.svg   (ca22a1cb)
+2019-02-27T19:53:55.6561266+07:00 0HLKSMAF4SNOV:00000001 [INF] Executed action "WebCoreApp.Controllers.HomeController.Index (WebCoreApp)" in 4806.475ms (afa2e885)
+2019-02-27T19:53:55.6769504+07:00 0HLKSMAF4SNP2:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:49945/images/banner2.svg   (ca22a1cb)
+2019-02-27T19:53:55.7044842+07:00 0HLKSMAF4SNP3:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:49945/images/banner3.svg   (ca22a1cb)
+2019-02-27T19:53:55.7201767+07:00 0HLKSMAF4SNP4:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:49945/images/banner4.svg   (ca22a1cb)
+2019-02-27T19:53:55.7330313+07:00 0HLKSMAF4SNP1:00000001 [INF] The file "/images/banner1.svg" was not modified (f1f8d725)
+2019-02-27T19:53:55.7584599+07:00 0HLKSMAF4SNP4:00000001 [INF] The file "/images/banner4.svg" was not modified (f1f8d725)
+2019-02-27T19:53:55.8245898+07:00 0HLKSMAF4SNP2:00000001 [INF] The file "/images/banner2.svg" was not modified (f1f8d725)
+2019-02-27T19:53:55.8472489+07:00 0HLKSMAF4SNP3:00000001 [INF] The file "/images/banner3.svg" was not modified (f1f8d725)
+2019-02-27T19:53:55.8620316+07:00 0HLKSMAF4SNOV:00000001 [INF] Request finished in 5315.2391ms 200 text/html; charset=utf-8 (791a596a)
+2019-02-27T19:53:55.8685441+07:00 0HLKSMAF4SNP4:00000001 [INF] Request finished in 165.6989ms 304 image/svg+xml (791a596a)
+2019-02-27T19:53:55.8750862+07:00 0HLKSMAF4SNP1:00000001 [INF] Request finished in 168.0409ms 304 image/svg+xml (791a596a)
+2019-02-27T19:53:55.8878048+07:00 0HLKSMAF4SNP3:00000001 [INF] Request finished in 256.9829ms 304 image/svg+xml (791a596a)
+2019-02-27T19:53:55.9111949+07:00 0HLKSMAF4SNP2:00000001 [INF] Request finished in 247.22ms 304 image/svg+xml (791a596a)
+2019-02-27T19:54:16.8038178+07:00 0HLKSMAF4SNP5:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:49945/admin   (ca22a1cb)
+2019-02-27T19:54:16.8132481+07:00 0HLKSMAF4SNP5:00000001 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2019-02-27T19:54:16.9042565+07:00 0HLKSMAF4SNP5:00000001 [INF] Executing action method "WebCoreApp.Areas.Admin.Controllers.LoginController.Index (WebCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2019-02-27T19:54:17.3906238+07:00 0HLKSMAF4SNP5:00000001 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Login/Index.cshtml". (9707eebe)
+2019-02-27T19:54:17.4309082+07:00 0HLKSMAF4SNP5:00000001 [INF] Executed action "WebCoreApp.Areas.Admin.Controllers.LoginController.Index (WebCoreApp)" in 526.0973ms (afa2e885)
+2019-02-27T19:54:17.4480616+07:00 0HLKSMAF4SNP5:00000001 [INF] Request finished in 652.3987ms 200 text/html; charset=utf-8 (791a596a)
+2019-02-27T19:54:19.4113573+07:00 0HLKSMAF4SNP7:00000001 [INF] Request starting HTTP/1.1 POST http://localhost:49945/admin/login/authen application/x-www-form-urlencoded; charset=UTF-8 33 (ca22a1cb)
+2019-02-27T19:54:19.4392352+07:00 0HLKSMAF4SNP7:00000001 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2019-02-27T19:54:19.5331900+07:00 0HLKSMAF4SNP7:00000001 [INF] Executing action method "WebCoreApp.Areas.Admin.Controllers.LoginController.Authen (WebCoreApp)" with arguments (["WebCoreApp.Models.AccountViewModels.LoginViewModel"]) - ModelState is Valid (ba7f4ac2)
+2019-02-27T19:54:19.5559620+07:00 0HLKSMAF4SNP7:00000001 [INF] Entity Framework Core "2.0.3-rtm-10026" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=TeduCoreApp.Data.EF " (9958f5bb)
+2019-02-27T19:54:19.6308790+07:00 0HLKSMAF4SNP7:00000001 [INF] Executed DbCommand ("31"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[Avatar], [u].[Balance], [u].[BirthDay], [u].[ConcurrencyStamp], [u].[DateCreated], [u].[DateModified], [u].[Email], [u].[EmailConfirmed], [u].[FullName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[Status], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AppUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2019-02-27T19:54:19.8225199+07:00 0HLKSMAF4SNP7:00000001 [INF] Executed DbCommand ("24"ms) [Parameters=["@__user_Id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [uc].[Id], [uc].[ClaimType], [uc].[ClaimValue], [uc].[UserId]
+FROM [AppUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0" (0723d8ff)
+2019-02-27T19:54:19.9212368+07:00 0HLKSMAF4SNP7:00000001 [INF] Executed DbCommand ("27"ms) [Parameters=["@__userId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2019-02-27T19:54:19.9443801+07:00 0HLKSMAF4SNP7:00000001 [INF] Executed DbCommand ("1"ms) [Parameters=["@__normalizedName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Description], [r].[Name], [r].[NormalizedName]
+FROM [AppRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0" (0723d8ff)
+2019-02-27T19:54:19.9816813+07:00 0HLKSMAF4SNP7:00000001 [INF] Executed DbCommand ("1"ms) [Parameters=["@__role_Id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [rc].[ClaimType], [rc].[ClaimValue]
+FROM [AppRoleClaims] AS [rc]
+WHERE [rc].[RoleId] = @__role_Id_0" (0723d8ff)
+2019-02-27T19:54:20.0277669+07:00 0HLKSMAF4SNP7:00000001 [INF] AuthenticationScheme: "Identity.Application" signed in. (c66dd7e7)
+2019-02-27T19:54:20.0366849+07:00 0HLKSMAF4SNP7:00000001 [INF] User logged in. (fdce0db4)
+2019-02-27T19:54:20.0535231+07:00 0HLKSMAF4SNP7:00000001 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2019-02-27T19:54:20.1144623+07:00 0HLKSMAF4SNP7:00000001 [INF] Executed action "WebCoreApp.Areas.Admin.Controllers.LoginController.Authen (WebCoreApp)" in 618.3567ms (afa2e885)
+2019-02-27T19:54:20.1453981+07:00 0HLKSMAF4SNP7:00000001 [INF] Request finished in 713.3979ms 200 application/json; charset=utf-8 (791a596a)
+2019-02-27T19:54:20.1755472+07:00 0HLKSMAF4SNP7:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:49945/Admin/Home/Index   (ca22a1cb)
+2019-02-27T19:54:20.1813464+07:00 0HLKSMAF4SNP7:00000002 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2019-02-27T19:54:20.2115463+07:00 0HLKSMAF4SNP7:00000002 [INF] Executing action method "WebCoreApp.Areas.Admin.Controllers.HomeController.Index (WebCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2019-02-27T19:54:20.3758929+07:00 0HLKSMAF4SNP7:00000002 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Home/Index.cshtml". (9707eebe)
+2019-02-27T19:54:20.6947143+07:00 0HLKSMAF4SNP7:00000002 [INF] Executed action "WebCoreApp.Areas.Admin.Controllers.HomeController.Index (WebCoreApp)" in 507.2327ms (afa2e885)
+2019-02-27T19:54:20.7205389+07:00 0HLKSMAF4SNP7:00000002 [INF] Request finished in 527.2546ms 200 text/html; charset=utf-8 (791a596a)
+2019-02-27T19:56:16.9348241+07:00  [INF] Entity Framework Core "2.0.3-rtm-10026" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=TeduCoreApp.Data.EF " (9958f5bb)
+2019-02-27T19:56:18.9568616+07:00  [INF] Executed DbCommand ("514"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppRoles] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2019-02-27T19:56:19.0083342+07:00  [INF] Executed DbCommand ("14"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppUsers] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2019-02-27T19:56:19.0760048+07:00  [INF] Executed DbCommand ("46"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Functions] AS [f]" (0723d8ff)
+2019-02-27T19:56:19.1259590+07:00  [INF] Executed DbCommand ("11"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Footers] AS [x]
+WHERE [x].[Id] = 'DefaultFooterId'" (0723d8ff)
+2019-02-27T19:56:19.1531264+07:00  [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Colors] AS [c]" (0723d8ff)
+2019-02-27T19:56:19.2421918+07:00  [INF] Executed DbCommand ("24"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [AdvertistmentPages] AS [a]" (0723d8ff)
+2019-02-27T19:56:19.3075078+07:00  [INF] Executed DbCommand ("12"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Slides] AS [s]" (0723d8ff)
+2019-02-27T19:56:19.3409175+07:00  [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Sizes] AS [s]" (0723d8ff)
+2019-02-27T19:56:19.3640778+07:00  [INF] Executed DbCommand ("11"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [ProductCategories] AS [p]" (0723d8ff)
+2019-02-27T19:56:19.4351240+07:00  [INF] Executed DbCommand ("13"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeTitle')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2019-02-27T19:56:19.4767198+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaKeyword')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2019-02-27T19:56:19.5084133+07:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaDescription')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2019-02-27T19:56:20.8925831+07:00 0HLKSMBS0GKLE:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:49945/   (ca22a1cb)
+2019-02-27T19:56:20.9370975+07:00 0HLKSMBS0GKLE:00000001 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2019-02-27T19:56:21.2810026+07:00 0HLKSMBS0GKLE:00000001 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2019-02-27T19:56:21.2989942+07:00 0HLKSMBS0GKLE:00000001 [INF] Executing action method "WebCoreApp.Controllers.HomeController.Index (WebCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2019-02-27T19:56:24.3200486+07:00 0HLKSMBS0GKLE:00000001 [INF] Executing ViewResult, running view at path "/Views/Home/Index.cshtml". (9707eebe)
+2019-02-27T19:56:25.1098039+07:00 0HLKSMBS0GKLE:00000001 [INF] Executed action "WebCoreApp.Controllers.HomeController.Index (WebCoreApp)" in 3816.0841ms (afa2e885)
+2019-02-27T19:56:25.1234707+07:00 0HLKSMBS0GKLE:00000001 [INF] Request finished in 4258.3994ms 200 text/html; charset=utf-8 (791a596a)
+2019-02-27T19:56:30.2433022+07:00 0HLKSMBS0GKLG:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:49945/admin   (ca22a1cb)
+2019-02-27T19:56:30.2604838+07:00 0HLKSMBS0GKLG:00000001 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2019-02-27T19:56:30.2926341+07:00 0HLKSMBS0GKLG:00000001 [INF] Executing action method "WebCoreApp.Areas.Admin.Controllers.LoginController.Index (WebCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2019-02-27T19:56:30.6817841+07:00 0HLKSMBS0GKLG:00000001 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Login/Index.cshtml". (9707eebe)
+2019-02-27T19:56:30.7473582+07:00 0HLKSMBS0GKLG:00000001 [INF] Executed action "WebCoreApp.Areas.Admin.Controllers.LoginController.Index (WebCoreApp)" in 474.1346ms (afa2e885)
+2019-02-27T19:56:30.8105714+07:00 0HLKSMBS0GKLG:00000001 [INF] Request finished in 540.5345ms 200 text/html; charset=utf-8 (791a596a)
+2019-02-27T19:56:32.2110769+07:00 0HLKSMBS0GKLG:00000002 [INF] Request starting HTTP/1.1 POST http://localhost:49945/admin/login/authen application/x-www-form-urlencoded; charset=UTF-8 33 (ca22a1cb)
+2019-02-27T19:56:32.2364801+07:00 0HLKSMBS0GKLG:00000002 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2019-02-27T19:56:32.3413897+07:00 0HLKSMBS0GKLG:00000002 [INF] Executing action method "WebCoreApp.Areas.Admin.Controllers.LoginController.Authen (WebCoreApp)" with arguments (["WebCoreApp.Models.AccountViewModels.LoginViewModel"]) - ModelState is Valid (ba7f4ac2)
+2019-02-27T19:56:32.3814871+07:00 0HLKSMBS0GKLG:00000002 [INF] Entity Framework Core "2.0.3-rtm-10026" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=TeduCoreApp.Data.EF " (9958f5bb)
+2019-02-27T19:56:32.4428746+07:00 0HLKSMBS0GKLG:00000002 [INF] Executed DbCommand ("28"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[Avatar], [u].[Balance], [u].[BirthDay], [u].[ConcurrencyStamp], [u].[DateCreated], [u].[DateModified], [u].[Email], [u].[EmailConfirmed], [u].[FullName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[Status], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AppUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2019-02-27T19:56:32.6012387+07:00 0HLKSMBS0GKLG:00000002 [INF] Executed DbCommand ("6"ms) [Parameters=["@__user_Id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [uc].[Id], [uc].[ClaimType], [uc].[ClaimValue], [uc].[UserId]
+FROM [AppUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0" (0723d8ff)
+2019-02-27T19:56:32.7056510+07:00 0HLKSMBS0GKLG:00000002 [INF] Executed DbCommand ("30"ms) [Parameters=["@__userId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2019-02-27T19:56:32.7472093+07:00 0HLKSMBS0GKLG:00000002 [INF] Executed DbCommand ("2"ms) [Parameters=["@__normalizedName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Description], [r].[Name], [r].[NormalizedName]
+FROM [AppRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0" (0723d8ff)
+2019-02-27T19:56:32.8029933+07:00 0HLKSMBS0GKLG:00000002 [INF] Executed DbCommand ("2"ms) [Parameters=["@__role_Id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [rc].[ClaimType], [rc].[ClaimValue]
+FROM [AppRoleClaims] AS [rc]
+WHERE [rc].[RoleId] = @__role_Id_0" (0723d8ff)
+2019-02-27T19:56:32.8497814+07:00 0HLKSMBS0GKLG:00000002 [INF] AuthenticationScheme: "Identity.Application" signed in. (c66dd7e7)
+2019-02-27T19:56:32.8610584+07:00 0HLKSMBS0GKLG:00000002 [INF] User logged in. (fdce0db4)
+2019-02-27T19:56:32.8743278+07:00 0HLKSMBS0GKLG:00000002 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2019-02-27T19:56:32.9475170+07:00 0HLKSMBS0GKLG:00000002 [INF] Executed action "WebCoreApp.Areas.Admin.Controllers.LoginController.Authen (WebCoreApp)" in 652.2418ms (afa2e885)
+2019-02-27T19:56:32.9649425+07:00 0HLKSMBS0GKLG:00000002 [INF] Request finished in 764.3588ms 200 application/json; charset=utf-8 (791a596a)
+2019-02-27T19:56:32.9981703+07:00 0HLKSMBS0GKLG:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:49945/Admin/Home/Index   (ca22a1cb)
+2019-02-27T19:56:33.0118512+07:00 0HLKSMBS0GKLG:00000003 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2019-02-27T19:56:33.1576945+07:00 0HLKSMBS0GKLG:00000003 [INF] Executing action method "WebCoreApp.Areas.Admin.Controllers.HomeController.Index (WebCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2019-02-27T19:56:33.3369442+07:00 0HLKSMBS0GKLG:00000003 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Home/Index.cshtml". (9707eebe)
+2019-02-27T19:56:33.6706009+07:00 0HLKSMBS0GKLG:00000003 [INF] Executed action "WebCoreApp.Areas.Admin.Controllers.HomeController.Index (WebCoreApp)" in 617.3228ms (afa2e885)
+2019-02-27T19:56:33.6820331+07:00 0HLKSMBS0GKLG:00000003 [INF] Request finished in 699.1909ms 200 text/html; charset=utf-8 (791a596a)
+2019-02-27T19:56:55.7767090+07:00 0HLKSMBS0GKLJ:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:49945/lib/bootstrap/dist/css/bootstrap.css.map   (ca22a1cb)
+2019-02-27T19:56:55.8059134+07:00 0HLKSMBS0GKLJ:00000001 [INF] The file "/lib/bootstrap/dist/css/bootstrap.css.map" was not modified (f1f8d725)
+2019-02-27T19:56:55.8163777+07:00 0HLKSMBS0GKLJ:00000001 [INF] Request finished in 58.376ms 304 text/plain (791a596a)
+2019-02-27T20:00:29.2534886+07:00  [INF] Entity Framework Core "2.0.3-rtm-10026" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=TeduCoreApp.Data.EF " (9958f5bb)
+2019-02-27T20:00:30.3100378+07:00  [INF] Executed DbCommand ("27"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppRoles] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2019-02-27T20:00:30.3472184+07:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppUsers] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2019-02-27T20:00:30.7804410+07:00  [INF] Executed DbCommand ("398"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Functions] AS [f]" (0723d8ff)
+2019-02-27T20:00:30.8992553+07:00  [INF] Executed DbCommand ("55"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Footers] AS [x]
+WHERE [x].[Id] = 'DefaultFooterId'" (0723d8ff)
+2019-02-27T20:00:30.9488664+07:00  [INF] Executed DbCommand ("30"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Colors] AS [c]" (0723d8ff)
+2019-02-27T20:00:31.0491323+07:00  [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [AdvertistmentPages] AS [a]" (0723d8ff)
+2019-02-27T20:00:31.1035161+07:00  [INF] Executed DbCommand ("8"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Slides] AS [s]" (0723d8ff)
+2019-02-27T20:00:31.1361172+07:00  [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Sizes] AS [s]" (0723d8ff)
+2019-02-27T20:00:31.1726462+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [ProductCategories] AS [p]" (0723d8ff)
+2019-02-27T20:00:31.2168002+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeTitle')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2019-02-27T20:00:31.2303076+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaKeyword')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2019-02-27T20:00:31.2397929+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaDescription')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2019-02-27T20:00:34.0707357+07:00 0HLKSME71988C:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:49945/   (ca22a1cb)
+2019-02-27T20:00:34.1221149+07:00 0HLKSME71988C:00000001 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2019-02-27T20:00:35.1389379+07:00 0HLKSME71988C:00000001 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2019-02-27T20:00:35.1568413+07:00 0HLKSME71988C:00000001 [INF] Executing action method "WebCoreApp.Controllers.HomeController.Index (WebCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2019-02-27T20:00:40.9047893+07:00 0HLKSME71988C:00000001 [INF] Executing ViewResult, running view at path "/Views/Home/Index.cshtml". (9707eebe)
+2019-02-27T20:00:41.4756718+07:00 0HLKSME71988C:00000001 [INF] Executed action "WebCoreApp.Controllers.HomeController.Index (WebCoreApp)" in 6337.4822ms (afa2e885)
+2019-02-27T20:00:41.4890480+07:00 0HLKSME71988C:00000001 [INF] Request finished in 7798.8511ms 200 text/html; charset=utf-8 (791a596a)
+2019-02-27T20:00:44.7639216+07:00 0HLKSME71988E:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:49945/admin   (ca22a1cb)
+2019-02-27T20:00:44.7778697+07:00 0HLKSME71988E:00000001 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2019-02-27T20:00:44.7997496+07:00 0HLKSME71988E:00000001 [INF] Executing action method "WebCoreApp.Areas.Admin.Controllers.LoginController.Index (WebCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2019-02-27T20:00:45.2163105+07:00 0HLKSME71988E:00000001 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Login/Index.cshtml". (9707eebe)
+2019-02-27T20:00:45.2927268+07:00 0HLKSME71988E:00000001 [INF] Executed action "WebCoreApp.Areas.Admin.Controllers.LoginController.Index (WebCoreApp)" in 470.6395ms (afa2e885)
+2019-02-27T20:00:45.3002505+07:00 0HLKSME71988E:00000001 [INF] Request finished in 539.4724ms 200 text/html; charset=utf-8 (791a596a)
+2019-02-27T20:00:46.5095001+07:00 0HLKSME71988E:00000002 [INF] Request starting HTTP/1.1 POST http://localhost:49945/admin/login/authen application/x-www-form-urlencoded; charset=UTF-8 33 (ca22a1cb)
+2019-02-27T20:00:46.5558576+07:00 0HLKSME71988E:00000002 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2019-02-27T20:00:46.6650306+07:00 0HLKSME71988E:00000002 [INF] Executing action method "WebCoreApp.Areas.Admin.Controllers.LoginController.Authen (WebCoreApp)" with arguments (["WebCoreApp.Models.AccountViewModels.LoginViewModel"]) - ModelState is Valid (ba7f4ac2)
+2019-02-27T20:00:46.6847605+07:00 0HLKSME71988E:00000002 [INF] Entity Framework Core "2.0.3-rtm-10026" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=TeduCoreApp.Data.EF " (9958f5bb)
+2019-02-27T20:00:46.8000938+07:00 0HLKSME71988E:00000002 [INF] Executed DbCommand ("61"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[Avatar], [u].[Balance], [u].[BirthDay], [u].[ConcurrencyStamp], [u].[DateCreated], [u].[DateModified], [u].[Email], [u].[EmailConfirmed], [u].[FullName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[Status], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AppUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2019-02-27T20:00:46.9044144+07:00 0HLKSME71988E:00000002 [INF] Executed DbCommand ("1"ms) [Parameters=["@__user_Id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [uc].[Id], [uc].[ClaimType], [uc].[ClaimValue], [uc].[UserId]
+FROM [AppUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0" (0723d8ff)
+2019-02-27T20:00:46.9977017+07:00 0HLKSME71988E:00000002 [INF] Executed DbCommand ("32"ms) [Parameters=["@__userId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2019-02-27T20:00:47.0208492+07:00 0HLKSME71988E:00000002 [INF] Executed DbCommand ("1"ms) [Parameters=["@__normalizedName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Description], [r].[Name], [r].[NormalizedName]
+FROM [AppRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0" (0723d8ff)
+2019-02-27T20:00:47.0498915+07:00 0HLKSME71988E:00000002 [INF] Executed DbCommand ("1"ms) [Parameters=["@__role_Id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [rc].[ClaimType], [rc].[ClaimValue]
+FROM [AppRoleClaims] AS [rc]
+WHERE [rc].[RoleId] = @__role_Id_0" (0723d8ff)
+2019-02-27T20:00:47.0963449+07:00 0HLKSME71988E:00000002 [INF] AuthenticationScheme: "Identity.Application" signed in. (c66dd7e7)
+2019-02-27T20:00:47.1051363+07:00 0HLKSME71988E:00000002 [INF] User logged in. (fdce0db4)
+2019-02-27T20:00:47.1156164+07:00 0HLKSME71988E:00000002 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2019-02-27T20:00:47.1637452+07:00 0HLKSME71988E:00000002 [INF] Executed action "WebCoreApp.Areas.Admin.Controllers.LoginController.Authen (WebCoreApp)" in 567.2163ms (afa2e885)
+2019-02-27T20:00:47.1797515+07:00 0HLKSME71988E:00000002 [INF] Request finished in 678.3608ms 200 application/json; charset=utf-8 (791a596a)
+2019-02-27T20:00:47.2141961+07:00 0HLKSME71988E:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:49945/Admin/Home/Index   (ca22a1cb)
+2019-02-27T20:00:47.2203870+07:00 0HLKSME71988E:00000003 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2019-02-27T20:00:47.2461482+07:00 0HLKSME71988E:00000003 [INF] Executing action method "WebCoreApp.Areas.Admin.Controllers.HomeController.Index (WebCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2019-02-27T20:00:47.4538519+07:00 0HLKSME71988E:00000003 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Home/Index.cshtml". (9707eebe)
+2019-02-27T20:00:47.9990222+07:00 0HLKSME71988E:00000003 [INF] Executed action "WebCoreApp.Areas.Admin.Controllers.HomeController.Index (WebCoreApp)" in 751.2019ms (afa2e885)
+2019-02-27T20:00:48.0205336+07:00 0HLKSME71988E:00000003 [INF] Request finished in 816.9248ms 200 text/html; charset=utf-8 (791a596a)
+2019-02-27T20:05:43.1064104+07:00  [INF] Entity Framework Core "2.0.3-rtm-10026" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=TeduCoreApp.Data.EF " (9958f5bb)
+2019-02-27T20:05:44.6957439+07:00  [INF] Executed DbCommand ("82"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppRoles] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2019-02-27T20:05:44.7350208+07:00  [INF] Executed DbCommand ("14"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppUsers] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2019-02-27T20:05:44.8096649+07:00  [INF] Executed DbCommand ("52"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Functions] AS [f]" (0723d8ff)
+2019-02-27T20:05:44.8828509+07:00  [INF] Executed DbCommand ("14"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Footers] AS [x]
+WHERE [x].[Id] = 'DefaultFooterId'" (0723d8ff)
+2019-02-27T20:05:44.9136974+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Colors] AS [c]" (0723d8ff)
+2019-02-27T20:05:44.9955955+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [AdvertistmentPages] AS [a]" (0723d8ff)
+2019-02-27T20:05:45.0603617+07:00  [INF] Executed DbCommand ("16"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Slides] AS [s]" (0723d8ff)
+2019-02-27T20:05:45.1092193+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Sizes] AS [s]" (0723d8ff)
+2019-02-27T20:05:45.1603568+07:00  [INF] Executed DbCommand ("12"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [ProductCategories] AS [p]" (0723d8ff)
+2019-02-27T20:05:45.2640537+07:00  [INF] Executed DbCommand ("14"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeTitle')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2019-02-27T20:05:45.2931665+07:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaKeyword')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2019-02-27T20:05:45.3310979+07:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaDescription')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2019-02-27T20:05:46.9962842+07:00 0HLKSMH4KO5KM:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:49945/   (ca22a1cb)
+2019-02-27T20:05:47.1107088+07:00 0HLKSMH4KO5KM:00000001 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2019-02-27T20:05:47.7423930+07:00 0HLKSMH4KO5KM:00000001 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2019-02-27T20:05:47.7725520+07:00 0HLKSMH4KO5KM:00000001 [INF] Executing action method "WebCoreApp.Controllers.HomeController.Index (WebCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2019-02-27T20:05:52.2007713+07:00 0HLKSMH4KO5KM:00000001 [INF] Executing ViewResult, running view at path "/Views/Home/Index.cshtml". (9707eebe)
+2019-02-27T20:05:53.3076051+07:00 0HLKSMH4KO5KM:00000001 [INF] Executed action "WebCoreApp.Controllers.HomeController.Index (WebCoreApp)" in 5564.6806ms (afa2e885)
+2019-02-27T20:05:53.3302709+07:00 0HLKSMH4KO5KM:00000001 [INF] Request finished in 6396.2662ms 200 text/html; charset=utf-8 (791a596a)
+2019-02-27T20:06:00.9881704+07:00 0HLKSMH4KO5KN:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:49945/admin   (ca22a1cb)
+2019-02-27T20:06:01.0146637+07:00 0HLKSMH4KO5KN:00000001 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2019-02-27T20:06:01.0274058+07:00 0HLKSMH4KO5KN:00000001 [INF] Executing action method "WebCoreApp.Areas.Admin.Controllers.LoginController.Index (WebCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2019-02-27T20:06:01.3773841+07:00 0HLKSMH4KO5KN:00000001 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Login/Index.cshtml". (9707eebe)
+2019-02-27T20:06:01.4445985+07:00 0HLKSMH4KO5KN:00000001 [INF] Executed action "WebCoreApp.Areas.Admin.Controllers.LoginController.Index (WebCoreApp)" in 386.1602ms (afa2e885)
+2019-02-27T20:06:01.4520021+07:00 0HLKSMH4KO5KN:00000001 [INF] Request finished in 481.9856ms 200 text/html; charset=utf-8 (791a596a)
+2019-02-27T20:06:04.2251273+07:00 0HLKSMH4KO5KP:00000001 [INF] Request starting HTTP/1.1 POST http://localhost:49945/admin/login/authen application/x-www-form-urlencoded; charset=UTF-8 33 (ca22a1cb)
+2019-02-27T20:06:04.2321457+07:00 0HLKSMH4KO5KP:00000001 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2019-02-27T20:06:04.3460992+07:00 0HLKSMH4KO5KP:00000001 [INF] Executing action method "WebCoreApp.Areas.Admin.Controllers.LoginController.Authen (WebCoreApp)" with arguments (["WebCoreApp.Models.AccountViewModels.LoginViewModel"]) - ModelState is Valid (ba7f4ac2)
+2019-02-27T20:06:04.3659071+07:00 0HLKSMH4KO5KP:00000001 [INF] Entity Framework Core "2.0.3-rtm-10026" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=TeduCoreApp.Data.EF " (9958f5bb)
+2019-02-27T20:06:04.5429602+07:00 0HLKSMH4KO5KP:00000001 [INF] Executed DbCommand ("50"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[Avatar], [u].[Balance], [u].[BirthDay], [u].[ConcurrencyStamp], [u].[DateCreated], [u].[DateModified], [u].[Email], [u].[EmailConfirmed], [u].[FullName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[Status], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AppUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2019-02-27T20:06:04.7047878+07:00 0HLKSMH4KO5KP:00000001 [INF] Executed DbCommand ("5"ms) [Parameters=["@__user_Id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [uc].[Id], [uc].[ClaimType], [uc].[ClaimValue], [uc].[UserId]
+FROM [AppUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0" (0723d8ff)
+2019-02-27T20:06:04.7827686+07:00 0HLKSMH4KO5KP:00000001 [INF] Executed DbCommand ("29"ms) [Parameters=["@__userId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2019-02-27T20:06:04.8010296+07:00 0HLKSMH4KO5KP:00000001 [INF] Executed DbCommand ("1"ms) [Parameters=["@__normalizedName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Description], [r].[Name], [r].[NormalizedName]
+FROM [AppRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0" (0723d8ff)
+2019-02-27T20:06:04.8300236+07:00 0HLKSMH4KO5KP:00000001 [INF] Executed DbCommand ("1"ms) [Parameters=["@__role_Id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [rc].[ClaimType], [rc].[ClaimValue]
+FROM [AppRoleClaims] AS [rc]
+WHERE [rc].[RoleId] = @__role_Id_0" (0723d8ff)
+2019-02-27T20:06:04.8494732+07:00 0HLKSMH4KO5KP:00000001 [INF] Executed DbCommand ("9"ms) [Parameters=["@__userId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2019-02-27T20:06:04.8756794+07:00 0HLKSMH4KO5KP:00000001 [INF] AuthenticationScheme: "Identity.Application" signed in. (c66dd7e7)
+2019-02-27T20:06:04.8823219+07:00 0HLKSMH4KO5KP:00000001 [INF] User logged in. (fdce0db4)
+2019-02-27T20:06:04.9141029+07:00 0HLKSMH4KO5KP:00000001 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2019-02-27T20:06:04.9539158+07:00 0HLKSMH4KO5KP:00000001 [INF] Executed action "WebCoreApp.Areas.Admin.Controllers.LoginController.Authen (WebCoreApp)" in 668.8282ms (afa2e885)
+2019-02-27T20:06:04.9638762+07:00 0HLKSMH4KO5KP:00000001 [INF] Request finished in 746.0869ms 200 application/json; charset=utf-8 (791a596a)
+2019-02-27T20:06:05.0058831+07:00 0HLKSMH4KO5KP:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:49945/Admin/Home/Index   (ca22a1cb)
+2019-02-27T20:06:05.0319810+07:00 0HLKSMH4KO5KP:00000002 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2019-02-27T20:06:05.0651665+07:00 0HLKSMH4KO5KP:00000002 [INF] Executing action method "WebCoreApp.Areas.Admin.Controllers.HomeController.Index (WebCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2019-02-27T20:06:05.2479850+07:00 0HLKSMH4KO5KP:00000002 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Home/Index.cshtml". (9707eebe)
+2019-02-27T20:06:05.5554125+07:00 0HLKSMH4KO5KP:00000002 [INF] Executed action "WebCoreApp.Areas.Admin.Controllers.HomeController.Index (WebCoreApp)" in 494.0353ms (afa2e885)
+2019-02-27T20:06:05.5643899+07:00 0HLKSMH4KO5KP:00000002 [INF] Request finished in 579.2547ms 200 text/html; charset=utf-8 (791a596a)
+2019-02-27T20:07:28.4878353+07:00  [INF] Entity Framework Core "2.0.3-rtm-10026" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=TeduCoreApp.Data.EF " (9958f5bb)
+2019-02-27T20:07:28.8447725+07:00  [INF] Executed DbCommand ("8"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppRoles] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2019-02-27T20:07:28.8640772+07:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppUsers] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2019-02-27T20:07:28.9015565+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Functions] AS [f]" (0723d8ff)
+2019-02-27T20:07:28.9221529+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Footers] AS [x]
+WHERE [x].[Id] = 'DefaultFooterId'" (0723d8ff)
+2019-02-27T20:07:28.9491411+07:00  [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Colors] AS [c]" (0723d8ff)
+2019-02-27T20:07:28.9909089+07:00  [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [AdvertistmentPages] AS [a]" (0723d8ff)
+2019-02-27T20:07:29.0384509+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Slides] AS [s]" (0723d8ff)
+2019-02-27T20:07:29.0715992+07:00  [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Sizes] AS [s]" (0723d8ff)
+2019-02-27T20:07:29.0871568+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [ProductCategories] AS [p]" (0723d8ff)
+2019-02-27T20:07:29.1263141+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeTitle')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2019-02-27T20:07:29.1395873+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaKeyword')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2019-02-27T20:07:29.1483739+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaDescription')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2019-02-27T20:07:30.5174971+07:00 0HLKSMI3G3ENN:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:49945/   (ca22a1cb)
+2019-02-27T20:07:30.6148959+07:00 0HLKSMI3G3ENN:00000001 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2019-02-27T20:07:31.0280098+07:00 0HLKSMI3G3ENN:00000001 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2019-02-27T20:07:31.0829501+07:00 0HLKSMI3G3ENN:00000001 [INF] Executing action method "WebCoreApp.Controllers.HomeController.Index (WebCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2019-02-27T20:07:35.6224483+07:00 0HLKSMI3G3ENN:00000001 [INF] Executing ViewResult, running view at path "/Views/Home/Index.cshtml". (9707eebe)
+2019-02-27T20:07:36.8489570+07:00 0HLKSMI3G3ENN:00000001 [INF] Executed action "WebCoreApp.Controllers.HomeController.Index (WebCoreApp)" in 5795.0939ms (afa2e885)
+2019-02-27T20:07:36.8827962+07:00 0HLKSMI3G3ENN:00000001 [INF] Request finished in 6445.3678ms 200 text/html; charset=utf-8 (791a596a)
+2019-02-27T20:07:39.8909106+07:00 0HLKSMI3G3ENP:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:49945/admin   (ca22a1cb)
+2019-02-27T20:07:39.9120845+07:00 0HLKSMI3G3ENP:00000001 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2019-02-27T20:07:39.9442482+07:00 0HLKSMI3G3ENP:00000001 [INF] Executing action method "WebCoreApp.Areas.Admin.Controllers.LoginController.Index (WebCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2019-02-27T20:07:40.5228209+07:00 0HLKSMI3G3ENP:00000001 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Login/Index.cshtml". (9707eebe)
+2019-02-27T20:07:40.6169668+07:00 0HLKSMI3G3ENP:00000001 [INF] Executed action "WebCoreApp.Areas.Admin.Controllers.LoginController.Index (WebCoreApp)" in 662.8383ms (afa2e885)
+2019-02-27T20:07:40.6468434+07:00 0HLKSMI3G3ENP:00000001 [INF] Request finished in 740.5857ms 200 text/html; charset=utf-8 (791a596a)
+2019-02-27T20:07:41.5320158+07:00 0HLKSMI3G3ENP:00000002 [INF] Request starting HTTP/1.1 POST http://localhost:49945/admin/login/authen application/x-www-form-urlencoded; charset=UTF-8 33 (ca22a1cb)
+2019-02-27T20:07:41.5670331+07:00 0HLKSMI3G3ENP:00000002 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2019-02-27T20:07:41.7270683+07:00 0HLKSMI3G3ENP:00000002 [INF] Executing action method "WebCoreApp.Areas.Admin.Controllers.LoginController.Authen (WebCoreApp)" with arguments (["WebCoreApp.Models.AccountViewModels.LoginViewModel"]) - ModelState is Valid (ba7f4ac2)
+2019-02-27T20:07:41.7831311+07:00 0HLKSMI3G3ENP:00000002 [INF] Entity Framework Core "2.0.3-rtm-10026" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=TeduCoreApp.Data.EF " (9958f5bb)
+2019-02-27T20:07:41.8988187+07:00 0HLKSMI3G3ENP:00000002 [INF] Executed DbCommand ("47"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[Avatar], [u].[Balance], [u].[BirthDay], [u].[ConcurrencyStamp], [u].[DateCreated], [u].[DateModified], [u].[Email], [u].[EmailConfirmed], [u].[FullName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[Status], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AppUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2019-02-27T20:07:42.1668740+07:00 0HLKSMI3G3ENP:00000002 [INF] Executed DbCommand ("10"ms) [Parameters=["@__user_Id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [uc].[Id], [uc].[ClaimType], [uc].[ClaimValue], [uc].[UserId]
+FROM [AppUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0" (0723d8ff)
+2019-02-27T20:07:42.2887228+07:00 0HLKSMI3G3ENP:00000002 [INF] Executed DbCommand ("19"ms) [Parameters=["@__userId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2019-02-27T20:07:42.3090949+07:00 0HLKSMI3G3ENP:00000002 [INF] Executed DbCommand ("2"ms) [Parameters=["@__normalizedName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Description], [r].[Name], [r].[NormalizedName]
+FROM [AppRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0" (0723d8ff)
+2019-02-27T20:07:42.3531759+07:00 0HLKSMI3G3ENP:00000002 [INF] Executed DbCommand ("2"ms) [Parameters=["@__role_Id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [rc].[ClaimType], [rc].[ClaimValue]
+FROM [AppRoleClaims] AS [rc]
+WHERE [rc].[RoleId] = @__role_Id_0" (0723d8ff)
+2019-02-27T20:07:42.3718272+07:00 0HLKSMI3G3ENP:00000002 [INF] Executed DbCommand ("3"ms) [Parameters=["@__userId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2019-02-27T20:07:42.4110100+07:00 0HLKSMI3G3ENP:00000002 [INF] AuthenticationScheme: "Identity.Application" signed in. (c66dd7e7)
+2019-02-27T20:07:42.4416898+07:00 0HLKSMI3G3ENP:00000002 [INF] User logged in. (fdce0db4)
+2019-02-27T20:07:42.4581426+07:00 0HLKSMI3G3ENP:00000002 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2019-02-27T20:07:42.5312068+07:00 0HLKSMI3G3ENP:00000002 [INF] Executed action "WebCoreApp.Areas.Admin.Controllers.LoginController.Authen (WebCoreApp)" in 891.376ms (afa2e885)
+2019-02-27T20:07:42.5603267+07:00 0HLKSMI3G3ENP:00000002 [INF] Request finished in 1027.051ms 200 application/json; charset=utf-8 (791a596a)
+2019-02-27T20:07:42.5760209+07:00 0HLKSMI3G3ENP:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:49945/Admin/Home/Index   (ca22a1cb)
+2019-02-27T20:07:42.6065942+07:00 0HLKSMI3G3ENP:00000003 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2019-02-27T20:07:42.6219673+07:00 0HLKSMI3G3ENP:00000003 [INF] Executing action method "WebCoreApp.Areas.Admin.Controllers.HomeController.Index (WebCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2019-02-27T20:07:43.0110377+07:00 0HLKSMI3G3ENP:00000003 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Home/Index.cshtml". (9707eebe)
+2019-02-27T20:07:43.4565660+07:00 0HLKSMI3G3ENP:00000003 [INF] Executed action "WebCoreApp.Areas.Admin.Controllers.HomeController.Index (WebCoreApp)" in 799.7848ms (afa2e885)
+2019-02-27T20:07:43.4957597+07:00 0HLKSMI3G3ENP:00000003 [INF] Request finished in 897.6511ms 200 text/html; charset=utf-8 (791a596a)
+2019-02-27T20:22:08.1156478+07:00  [INF] Entity Framework Core "2.0.3-rtm-10026" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=TeduCoreApp.Data.EF " (9958f5bb)
+2019-02-27T20:22:11.3478464+07:00  [INF] Executed DbCommand ("148"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppRoles] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2019-02-27T20:22:11.4289183+07:00  [INF] Executed DbCommand ("57"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppUsers] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2019-02-27T20:22:11.5659361+07:00  [INF] Executed DbCommand ("111"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Functions] AS [f]" (0723d8ff)
+2019-02-27T20:22:11.6399733+07:00  [INF] Executed DbCommand ("21"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Footers] AS [x]
+WHERE [x].[Id] = 'DefaultFooterId'" (0723d8ff)
+2019-02-27T20:22:11.6734200+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Colors] AS [c]" (0723d8ff)
+2019-02-27T20:22:11.7419490+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [AdvertistmentPages] AS [a]" (0723d8ff)
+2019-02-27T20:22:11.9901734+07:00  [INF] Executed DbCommand ("31"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Slides] AS [s]" (0723d8ff)
+2019-02-27T20:22:12.0195953+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Sizes] AS [s]" (0723d8ff)
+2019-02-27T20:22:12.0901519+07:00  [INF] Executed DbCommand ("22"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [ProductCategories] AS [p]" (0723d8ff)
+2019-02-27T20:22:12.1999589+07:00  [INF] Executed DbCommand ("29"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeTitle')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2019-02-27T20:22:12.2244640+07:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaKeyword')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2019-02-27T20:22:12.2414929+07:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaDescription')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2019-02-27T20:22:16.5777558+07:00 0HLKSMQAOBKDB:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:49945/   (ca22a1cb)
+2019-02-27T20:22:16.8426603+07:00 0HLKSMQAOBKDB:00000001 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2019-02-27T20:22:18.1452776+07:00 0HLKSMQAOBKDB:00000001 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2019-02-27T20:22:18.1726416+07:00 0HLKSMQAOBKDB:00000001 [INF] Executing action method "WebCoreApp.Controllers.HomeController.Index (WebCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2019-02-27T20:22:26.5672365+07:00 0HLKSMQAOBKDB:00000001 [INF] Executing ViewResult, running view at path "/Views/Home/Index.cshtml". (9707eebe)
+2019-02-27T20:22:27.2633097+07:00 0HLKSMQAOBKDB:00000001 [INF] Executed action "WebCoreApp.Controllers.HomeController.Index (WebCoreApp)" in 9124.9244ms (afa2e885)
+2019-02-27T20:22:27.2772430+07:00 0HLKSMQAOBKDB:00000001 [INF] Request finished in 12513.4278ms 200 text/html; charset=utf-8 (791a596a)
+2019-02-27T20:22:36.4846537+07:00 0HLKSMQAOBKDD:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:49945/admin   (ca22a1cb)
+2019-02-27T20:22:36.5117163+07:00 0HLKSMQAOBKDD:00000001 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2019-02-27T20:22:36.5338261+07:00 0HLKSMQAOBKDD:00000001 [INF] Executing action method "WebCoreApp.Areas.Admin.Controllers.LoginController.Index (WebCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2019-02-27T20:22:36.9680914+07:00 0HLKSMQAOBKDD:00000001 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Login/Index.cshtml". (9707eebe)
+2019-02-27T20:22:37.0241970+07:00 0HLKSMQAOBKDD:00000001 [INF] Executed action "WebCoreApp.Areas.Admin.Controllers.LoginController.Index (WebCoreApp)" in 499.2335ms (afa2e885)
+2019-02-27T20:22:37.0538302+07:00 0HLKSMQAOBKDD:00000001 [INF] Request finished in 543.8657ms 200 text/html; charset=utf-8 (791a596a)
+2019-02-27T20:22:39.6121423+07:00 0HLKSMQAOBKDF:00000001 [INF] Request starting HTTP/1.1 POST http://localhost:49945/admin/login/authen application/x-www-form-urlencoded; charset=UTF-8 33 (ca22a1cb)
+2019-02-27T20:22:39.6173071+07:00 0HLKSMQAOBKDF:00000001 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2019-02-27T20:22:39.6978673+07:00 0HLKSMQAOBKDF:00000001 [INF] Executing action method "WebCoreApp.Areas.Admin.Controllers.LoginController.Authen (WebCoreApp)" with arguments (["WebCoreApp.Models.AccountViewModels.LoginViewModel"]) - ModelState is Valid (ba7f4ac2)
+2019-02-27T20:22:39.8445486+07:00 0HLKSMQAOBKDF:00000001 [INF] Entity Framework Core "2.0.3-rtm-10026" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=TeduCoreApp.Data.EF " (9958f5bb)
+2019-02-27T20:22:39.9710305+07:00 0HLKSMQAOBKDF:00000001 [INF] Executed DbCommand ("91"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[Avatar], [u].[Balance], [u].[BirthDay], [u].[ConcurrencyStamp], [u].[DateCreated], [u].[DateModified], [u].[Email], [u].[EmailConfirmed], [u].[FullName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[Status], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AppUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2019-02-27T20:22:40.1565997+07:00 0HLKSMQAOBKDF:00000001 [INF] Executed DbCommand ("28"ms) [Parameters=["@__user_Id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [uc].[Id], [uc].[ClaimType], [uc].[ClaimValue], [uc].[UserId]
+FROM [AppUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0" (0723d8ff)
+2019-02-27T20:22:40.6097515+07:00 0HLKSMQAOBKDF:00000001 [INF] Executed DbCommand ("403"ms) [Parameters=["@__userId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2019-02-27T20:22:40.6336505+07:00 0HLKSMQAOBKDF:00000001 [INF] Executed DbCommand ("2"ms) [Parameters=["@__normalizedName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Description], [r].[Name], [r].[NormalizedName]
+FROM [AppRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0" (0723d8ff)
+2019-02-27T20:22:40.6803338+07:00 0HLKSMQAOBKDF:00000001 [INF] Executed DbCommand ("1"ms) [Parameters=["@__role_Id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [rc].[ClaimType], [rc].[ClaimValue]
+FROM [AppRoleClaims] AS [rc]
+WHERE [rc].[RoleId] = @__role_Id_0" (0723d8ff)
+2019-02-27T20:22:40.6895721+07:00 0HLKSMQAOBKDF:00000001 [INF] Executed DbCommand ("2"ms) [Parameters=["@__userId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2019-02-27T20:22:40.7288881+07:00 0HLKSMQAOBKDF:00000001 [INF] AuthenticationScheme: "Identity.Application" signed in. (c66dd7e7)
+2019-02-27T20:22:40.7369380+07:00 0HLKSMQAOBKDF:00000001 [INF] User logged in. (fdce0db4)
+2019-02-27T20:22:40.7670342+07:00 0HLKSMQAOBKDF:00000001 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2019-02-27T20:22:40.8470070+07:00 0HLKSMQAOBKDF:00000001 [INF] Executed action "WebCoreApp.Areas.Admin.Controllers.LoginController.Authen (WebCoreApp)" in 1178.916ms (afa2e885)
+2019-02-27T20:22:40.8645416+07:00 0HLKSMQAOBKDF:00000001 [INF] Request finished in 1265.6626ms 200 application/json; charset=utf-8 (791a596a)
+2019-02-27T20:22:41.0761494+07:00 0HLKSMQAOBKDF:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:49945/Admin/Home/Index   (ca22a1cb)
+2019-02-27T20:22:41.0841289+07:00 0HLKSMQAOBKDF:00000002 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2019-02-27T20:22:41.1013531+07:00 0HLKSMQAOBKDF:00000002 [INF] Executing action method "WebCoreApp.Areas.Admin.Controllers.HomeController.Index (WebCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2019-02-27T20:22:41.3646247+07:00 0HLKSMQAOBKDF:00000002 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Home/Index.cshtml". (9707eebe)
+2019-02-27T20:22:41.6726376+07:00 0HLKSMQAOBKDF:00000002 [INF] Executed action "WebCoreApp.Areas.Admin.Controllers.HomeController.Index (WebCoreApp)" in 571.3314ms (afa2e885)
+2019-02-27T20:22:41.6991939+07:00 0HLKSMQAOBKDF:00000002 [INF] Request finished in 652.5422ms 200 text/html; charset=utf-8 (791a596a)
+2019-02-27T20:22:42.6527215+07:00 0HLKSMQAOBKDF:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:49945/admin-side/images/ntva.jpg   (ca22a1cb)
+2019-02-27T20:22:42.6623412+07:00 0HLKSMQAOBKDF:00000003 [INF] Sending file. Request path: '"/admin-side/images/ntva.jpg"'. Physical path: '"C:\Users\trong\OneDrive\Desktop\WebCoreApp\WebCoreApp\WebCoreApp\wwwroot\admin-side\images\ntva.jpg"' (27b0a520)
+2019-02-27T20:22:42.7162288+07:00 0HLKSMQAOBKDF:00000003 [INF] Request finished in 64.8783ms 200 image/jpeg (791a596a)
+2019-02-27T20:26:44.6787058+07:00  [INF] Entity Framework Core "2.0.3-rtm-10026" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=TeduCoreApp.Data.EF " (9958f5bb)
+2019-02-27T20:26:47.4645471+07:00  [INF] Executed DbCommand ("320"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppRoles] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2019-02-27T20:26:47.5214912+07:00  [INF] Executed DbCommand ("33"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AppUsers] AS [a])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2019-02-27T20:26:47.6600838+07:00  [INF] Executed DbCommand ("104"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Functions] AS [f]" (0723d8ff)
+2019-02-27T20:26:47.7502581+07:00  [INF] Executed DbCommand ("48"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Footers] AS [x]
+WHERE [x].[Id] = 'DefaultFooterId'" (0723d8ff)
+2019-02-27T20:26:47.7795383+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Colors] AS [c]" (0723d8ff)
+2019-02-27T20:26:47.8649588+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [AdvertistmentPages] AS [a]" (0723d8ff)
+2019-02-27T20:26:47.9437951+07:00  [INF] Executed DbCommand ("23"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Slides] AS [s]" (0723d8ff)
+2019-02-27T20:26:47.9789542+07:00  [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Sizes] AS [s]" (0723d8ff)
+2019-02-27T20:26:48.0056486+07:00  [INF] Executed DbCommand ("12"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [ProductCategories] AS [p]" (0723d8ff)
+2019-02-27T20:26:48.0953346+07:00  [INF] Executed DbCommand ("12"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeTitle')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2019-02-27T20:26:48.1145318+07:00  [INF] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaKeyword')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2019-02-27T20:26:48.1476764+07:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SystemConfigs] AS [x]
+        WHERE [x].[Id] = N'HomeMetaDescription')
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2019-02-27T20:26:54.4169371+07:00 0HLKSMSSVHJGH:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:49945/   (ca22a1cb)
+2019-02-27T20:26:54.4576355+07:00 0HLKSMSSVHJGH:00000001 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2019-02-27T20:26:58.1234435+07:00 0HLKSMSSVHJGH:00000001 [INF] Authorization was successful for user: "admin". (d7eb274a)
+2019-02-27T20:26:58.1364163+07:00 0HLKSMSSVHJGH:00000001 [INF] Executing action method "WebCoreApp.Controllers.HomeController.Index (WebCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2019-02-27T20:27:06.7429409+07:00 0HLKSMSSVHJGH:00000001 [INF] Executing ViewResult, running view at path "/Views/Home/Index.cshtml". (9707eebe)
+2019-02-27T20:27:07.6665737+07:00 0HLKSMSSVHJGH:00000001 [INF] Executed action "WebCoreApp.Controllers.HomeController.Index (WebCoreApp)" in 9534.2495ms (afa2e885)
+2019-02-27T20:27:07.6761715+07:00 0HLKSMSSVHJGH:00000001 [INF] Request finished in 14642.1795ms 200 text/html; charset=utf-8 (791a596a)
+2019-02-27T20:27:17.6744413+07:00 0HLKSMSSVHJGJ:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:49945/admin/login   (ca22a1cb)
+2019-02-27T20:27:17.7008279+07:00 0HLKSMSSVHJGJ:00000001 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2019-02-27T20:27:17.7432974+07:00 0HLKSMSSVHJGJ:00000001 [INF] Executing action method "WebCoreApp.Areas.Admin.Controllers.LoginController.Index (WebCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2019-02-27T20:27:18.1302352+07:00 0HLKSMSSVHJGJ:00000001 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Login/Index.cshtml". (9707eebe)
+2019-02-27T20:27:18.2239802+07:00 0HLKSMSSVHJGJ:00000001 [INF] Executed action "WebCoreApp.Areas.Admin.Controllers.LoginController.Index (WebCoreApp)" in 464.6453ms (afa2e885)
+2019-02-27T20:27:18.2296689+07:00 0HLKSMSSVHJGJ:00000001 [INF] Request finished in 562.7776ms 200 text/html; charset=utf-8 (791a596a)
+2019-02-27T20:27:20.7587840+07:00 0HLKSMSSVHJGJ:00000002 [INF] Request starting HTTP/1.1 POST http://localhost:49945/admin/login/authen application/x-www-form-urlencoded; charset=UTF-8 33 (ca22a1cb)
+2019-02-27T20:27:20.7845945+07:00 0HLKSMSSVHJGJ:00000002 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2019-02-27T20:27:20.9498107+07:00 0HLKSMSSVHJGJ:00000002 [INF] Executing action method "WebCoreApp.Areas.Admin.Controllers.LoginController.Authen (WebCoreApp)" with arguments (["WebCoreApp.Models.AccountViewModels.LoginViewModel"]) - ModelState is Valid (ba7f4ac2)
+2019-02-27T20:27:20.9847113+07:00 0HLKSMSSVHJGJ:00000002 [INF] Entity Framework Core "2.0.3-rtm-10026" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=TeduCoreApp.Data.EF " (9958f5bb)
+2019-02-27T20:27:21.1754093+07:00 0HLKSMSSVHJGJ:00000002 [INF] Executed DbCommand ("107"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[Avatar], [u].[Balance], [u].[BirthDay], [u].[ConcurrencyStamp], [u].[DateCreated], [u].[DateModified], [u].[Email], [u].[EmailConfirmed], [u].[FullName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[Status], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AppUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2019-02-27T20:27:21.4063121+07:00 0HLKSMSSVHJGJ:00000002 [INF] Executed DbCommand ("13"ms) [Parameters=["@__user_Id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [uc].[Id], [uc].[ClaimType], [uc].[ClaimValue], [uc].[UserId]
+FROM [AppUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0" (0723d8ff)
+2019-02-27T20:27:21.6420703+07:00 0HLKSMSSVHJGJ:00000002 [INF] Executed DbCommand ("73"ms) [Parameters=["@__userId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2019-02-27T20:27:21.6778281+07:00 0HLKSMSSVHJGJ:00000002 [INF] Executed DbCommand ("4"ms) [Parameters=["@__normalizedName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Description], [r].[Name], [r].[NormalizedName]
+FROM [AppRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0" (0723d8ff)
+2019-02-27T20:27:21.7277012+07:00 0HLKSMSSVHJGJ:00000002 [INF] Executed DbCommand ("1"ms) [Parameters=["@__role_Id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [rc].[ClaimType], [rc].[ClaimValue]
+FROM [AppRoleClaims] AS [rc]
+WHERE [rc].[RoleId] = @__role_Id_0" (0723d8ff)
+2019-02-27T20:27:21.7564286+07:00 0HLKSMSSVHJGJ:00000002 [INF] Executed DbCommand ("1"ms) [Parameters=["@__userId_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2019-02-27T20:27:21.7853442+07:00 0HLKSMSSVHJGJ:00000002 [INF] AuthenticationScheme: "Identity.Application" signed in. (c66dd7e7)
+2019-02-27T20:27:21.7975779+07:00 0HLKSMSSVHJGJ:00000002 [INF] User logged in. (fdce0db4)
+2019-02-27T20:27:21.8215527+07:00 0HLKSMSSVHJGJ:00000002 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2019-02-27T20:27:21.9108117+07:00 0HLKSMSSVHJGJ:00000002 [INF] Executed action "WebCoreApp.Areas.Admin.Controllers.LoginController.Authen (WebCoreApp)" in 1011.3517ms (afa2e885)
+2019-02-27T20:27:21.9395143+07:00 0HLKSMSSVHJGJ:00000002 [INF] Request finished in 1187.2981ms 200 application/json; charset=utf-8 (791a596a)
+2019-02-27T20:27:21.9669151+07:00 0HLKSMSSVHJGJ:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:49945/Admin/Home/Index   (ca22a1cb)
+2019-02-27T20:27:21.9759375+07:00 0HLKSMSSVHJGJ:00000003 [INF] AuthenticationScheme: "Identity.Application" was successfully authenticated. (1805f3b3)
+2019-02-27T20:27:21.9838485+07:00 0HLKSMSSVHJGJ:00000003 [INF] Executing action method "WebCoreApp.Areas.Admin.Controllers.HomeController.Index (WebCoreApp)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2019-02-27T20:27:22.3339801+07:00 0HLKSMSSVHJGJ:00000003 [INF] Executing ViewResult, running view at path "/Areas/Admin/Views/Home/Index.cshtml". (9707eebe)
+2019-02-27T20:27:22.6554680+07:00 0HLKSMSSVHJGJ:00000003 [INF] Executed action "WebCoreApp.Areas.Admin.Controllers.HomeController.Index (WebCoreApp)" in 648.4011ms (afa2e885)
+2019-02-27T20:27:22.6789438+07:00 0HLKSMSSVHJGJ:00000003 [INF] Request finished in 716.4364ms 200 text/html; charset=utf-8 (791a596a)
+2019-02-27T20:27:23.5254334+07:00 0HLKSMSSVHJGJ:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:49945/admin-side/images/ntva.jpg   (ca22a1cb)
+2019-02-27T20:27:23.5972978+07:00 0HLKSMSSVHJGJ:00000004 [INF] The file "/admin-side/images/ntva.jpg" was not modified (f1f8d725)
+2019-02-27T20:27:23.6283764+07:00 0HLKSMSSVHJGJ:00000004 [INF] Request finished in 102.0783ms 304 image/jpeg (791a596a)

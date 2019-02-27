@@ -38,7 +38,7 @@ namespace WebCoreApp
         {
             services.AddDbContext<AppDbContext>(options =>
                 options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection"),
-                o => o.MigrationsAssembly("WebCoreApp.Data.EF")));
+                o => o.MigrationsAssembly("TeduCoreApp.Data.EF")));
 
             services.AddIdentity<AppUser, AppRole>()
                 .AddEntityFrameworkStores<AppDbContext>()
@@ -113,5 +113,7 @@ namespace WebCoreApp
             });
 
         }
+
     }
+    
 }
